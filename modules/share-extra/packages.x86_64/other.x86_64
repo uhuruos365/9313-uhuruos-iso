@@ -35,7 +35,7 @@ htop
 
 
 #-- printer --#
-system-config-printer
+#system-config-printer
 
 
 #-- text editor --#
@@ -44,4 +44,4 @@ vim
 
 
 #-- other --#
-libreoffice-still
+#libreoffice-still
