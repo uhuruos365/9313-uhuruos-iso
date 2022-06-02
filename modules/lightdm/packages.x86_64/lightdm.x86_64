@@ -10,3 +10,4 @@
 # Display Manager
 
 lightdm
+lightdm-gtk-greeter
