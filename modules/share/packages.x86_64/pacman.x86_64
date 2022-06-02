@@ -10,9 +10,9 @@
 # package management
 
 #-- keyring --#
-alterlinux-keyring
+#alterlinux-keyring
 
 
 #-- mirrorlist --#
-alterlinux-mirrorlist
-reflector
+#alterlinux-mirrorlist
+#reflector
