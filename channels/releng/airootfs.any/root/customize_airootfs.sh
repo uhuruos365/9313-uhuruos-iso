@@ -88,8 +88,8 @@ fi
 # Enable services.
 systemctl enable NetworkManager
 systemctl enable pacman-init.service
-systemctl enable alteriso-reflector.service
-systemctl disable reflector.service
+#systemctl enable alteriso-reflector.service
+#systemctl disable reflector.service
 systemctl set-default multi-user.target
 
 remove /etc/arch-release

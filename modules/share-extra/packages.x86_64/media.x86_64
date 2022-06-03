@@ -17,3 +17,6 @@ bluez-utils
 
 #-- media player --#
 #vlc
+
+#-- editor --#
+pluma
