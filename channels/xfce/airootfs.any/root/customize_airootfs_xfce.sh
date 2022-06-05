@@ -8,9 +8,9 @@
 #
 
 # Replace wallpaper.
-if [[ -f /usr/share/backgrounds/xfce/xfce-stripes.png ]]; then
-    remove /usr/share/backgrounds/xfce/xfce-stripes.png
-    ln -s /usr/share/backgrounds/arch-logo-dark/ALDark1.png /usr/share/backgrounds/xfce/xfce-stripes.png
+if [[ -f /usr/share/backgrounds/xfce/xfce-verticals.png ]]; then
+    remove /usr/share/backgrounds/xfce/xfce-verticals.png
+    ln -s /usr/share/backgrounds/arch-logo-dark/ALDark1.png /usr/share/backgrounds/xfce/xfce-verticals.png
 fi
 [[ -f /usr/share/backgrounds/arch-logo-dark/ALDark1.png ]] && chmod 644 /usr/share/backgrounds/arch-logo-dark/ALDark1.png
 
