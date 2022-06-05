@@ -7,7 +7,7 @@
 #
 # (c) 2019-2021 Fascode Network.
 #
-# look and feel
+# Xfce4 Desktop Environment
 
-# theme
-#arc-gtk-theme
+
+midnight-gtk-theme-git
