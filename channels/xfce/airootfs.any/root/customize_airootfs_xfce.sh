@@ -26,3 +26,8 @@ else
     remove "/etc/skel/.config/Thunar/uca.xml.jp"
     remove "/home/${username}/.config/Thunar/uca.xml.jp"
 fi
+
+# Change Theme
+
+sed -i -E 's@(^    <property name="theme" type="string" value=").*("/>$)@\1HOGEHOGE\2@g' "/home/${username}/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml"
+sed -i -E 's@(^    <property name="ThemeName" type="string" value=").*("/>$)@\1HOGEHOGEFU\2@g' "/home/${username}/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml"
