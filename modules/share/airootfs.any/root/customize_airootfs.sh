@@ -175,6 +175,6 @@ _safe_systemctl mask systemd-rfkill.service
 _safe_systemctl mask systemd-rfkill.socket
 
 # Add GPG key of BlackArch
-gpg --recv-keys 4345771566D76038C7FEB43863EC0ADBEA87E4E3
+#gpg --recv-keys 4345771566D76038C7FEB43863EC0ADBEA87E4E3
 # Add BlackArch Repository
-curl -s  https://raw.githubusercontent.com/BlackArch/blackarch/master/mirror/mirror.lst | sed 's/^..|/Server = /;s/|.*//' >> /etc/pacman.d/mirrorlist
+#curl -s  https://raw.githubusercontent.com/BlackArch/blackarch/master/mirror/mirror.lst | sed 's/^..|/Server = /;s/|.*//' >> /etc/pacman.d/mirrorlist
