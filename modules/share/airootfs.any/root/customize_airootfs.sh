@@ -162,7 +162,7 @@ _safe_systemctl set-default graphical.target
 
 # Enable services.
 _safe_systemctl enable pacman-init.service
-_safe_systemctl enable cups.service
+#_safe_systemctl enable cups.service
 _safe_systemctl enable NetworkManager.service
 #_safe_systemctl enable alteriso-reflector.service
 #_safe_systemctl disable reflector.service
@@ -173,3 +173,7 @@ _safe_systemctl enable NetworkManager.service
 _safe_systemctl enable tlp.service
 _safe_systemctl mask systemd-rfkill.service
 _safe_systemctl mask systemd-rfkill.socket
+
+# Add BlackArch Repository
+
+curl -s  https://raw.githubusercontent.com/BlackArch/blackarch/master/mirror/mirror.lst | sed 's/^..|/Server = /;s/|.*//' >> /etc/pacman.d/mirrorlist
