@@ -12,6 +12,7 @@
 #-- keyring --#
 #alterlinux-keyring
 manjaro-keyring
+blackarch-keyring
 
 
 #-- mirrorlist --#
