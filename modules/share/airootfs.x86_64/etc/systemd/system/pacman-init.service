@@ -13,7 +13,7 @@ ExecStart=/usr/bin/pacman-key --populate archlinux
 #ExecStart=/usr/bin/pacman-key --populate alterlinux
 ExecStart=/usr/bin/pacman-key --populate manjaro
 ExecStart=/usr/bin/pacman-key --populate blackarch
-ExecStart=/usr/bin/pacman-key --refresh-keys
+#ExecStart=/usr/bin/pacman-key --refresh-keys
 
 [Install]
 WantedBy=multi-user.target

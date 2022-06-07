@@ -11,3 +11,5 @@ nyx
 #-- Zeronet --#
 Zeronet
 
+#-- proxychains --#
+proxychains-ng
