@@ -4,8 +4,5 @@
 # infoengine1337
 # Twitter: @infoengine1337
 
-#-- Bitcoin --#
-electrum
-
-#-- Monero official client --#
-monero
+#-- Riseup-VPN --#
+riseup-vpn

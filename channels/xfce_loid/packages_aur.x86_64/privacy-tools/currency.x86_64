@@ -4,6 +4,11 @@
 # infoengine1337
 # Twitter: @infoengine1337
 
+#-- Litecoin --#
 electrum-ltc
+
+#-- BitCash --#
 electron-cash
+
+#-- Monero (Lite Client) --#
 monero-feather

@@ -4,6 +4,11 @@
 # infoengine1337
 # Twitter: @infoengine1337
 
-telegram-desktop
+#-- email --#
+thunderbird
 
+#-- jabber --#
 gajim
+
+#-- Telegram --#
+telegram-desktop
