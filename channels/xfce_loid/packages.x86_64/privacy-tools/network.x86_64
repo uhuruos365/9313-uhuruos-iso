@@ -6,6 +6,7 @@
 
 #-- Tor --#
 tor
+tor-browser
 nyx
 
 #-- Zeronet --#
@@ -13,3 +14,6 @@ Zeronet
 
 #-- proxychains --#
 proxychains-ng
+
+#-- shadowsocks --#
+shadowsocks-libev
