@@ -6,11 +6,8 @@
 
 #-- Tor --#
 tor
-tor-browser
+torbrowser-launcher
 nyx
-
-#-- Zeronet --#
-Zeronet
 
 #-- proxychains --#
 proxychains-ng
