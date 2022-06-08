@@ -13,7 +13,8 @@
 network-manager-applet
 
 #-- mail client --#
-thunderbird
+#thunderbird
 
 #-- web browser --#
-chromium
+#chromium
+firefox

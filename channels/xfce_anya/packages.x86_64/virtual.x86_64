@@ -1,0 +1,13 @@
+#
+# Uhuru OS package list
+#
+# infoengine1337
+# Twitter: @infoengine1337
+
+#-- VirtualBox --#
+virtualbox
+virtualbox-host-dkms
+
+#-- Container --"
+lxd
+docker

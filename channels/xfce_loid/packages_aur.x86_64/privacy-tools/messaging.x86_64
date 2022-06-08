@@ -1,0 +1,13 @@
+#
+# Uhuru OS package list
+#
+# infoengine1337
+# Twitter: @infoengine1337
+
+#-- Signal and Session --#
+signal-desktop
+session-desktop
+
+#-- Gajim OMEMO Plugin --#
+gajim-omemo-plugin
+

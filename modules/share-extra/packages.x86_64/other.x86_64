@@ -22,7 +22,7 @@ gvfs-smb
 #-- boot manager --#
 # grub-theme-vimix-alter
 grub-theme-vimix
-grub-customizer
+#grub-customizer
 
 
 #-- documents --#
@@ -35,13 +35,15 @@ htop
 
 
 #-- printer --#
-system-config-printer
+#system-config-printer
 
 
 #-- text editor --#
 nano
 vim
 
+#-- graphic editor --#
+pluma
 
 #-- other --#
-libreoffice-still
+#libreoffice-still

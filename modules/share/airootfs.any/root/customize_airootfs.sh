@@ -80,7 +80,7 @@ ln -sf "/usr/share/zoneinfo/${timezone}" /etc/localtime
 
 usermod -s "${usershell}" root
 cp -aT /etc/skel/ /root/
-run_additional_command "xdg-user-dirs-update" "LC_ALL=C LANG=C xdg-user-dirs-update"
+#run_additional_command "xdg-user-dirs-update" "LC_ALL=C LANG=C xdg-user-dirs-update"
 echo -e "${password}\n${password}" | passwd root
 
 # Allow sudo group to run sudo
@@ -92,9 +92,9 @@ create_user "${username}" "${password}"
 
 
 # Set up auto login
-if [[ -f "/etc/systemd/system/getty@.service.d/autologin.conf" ]]; then
-    sed -i "s|%USERNAME%|${username}|g" "/etc/systemd/system/getty@.service.d/autologin.conf"
-fi
+#if [[ -f "/etc/systemd/system/getty@.service.d/autologin.conf" ]]; then
+#    sed -i "s|%USERNAME%|${username}|g" "/etc/systemd/system/getty@.service.d/autologin.conf"
+#fi
 
 
 # Set to execute sudo without password as alter user.
@@ -110,16 +110,16 @@ chown root:root -R /etc/sudoers.d/
 
 
 # Configure Plymouth settings
-if [[ "${boot_splash}" = true ]]; then
+#if [[ "${boot_splash}" = true ]]; then
     # Override plymouth settings.
-    sed -i "s/%PLYMOUTH_THEME%/${theme_name}/g" "/etc/plymouth/plymouthd.conf"
+#    sed -i "s/%PLYMOUTH_THEME%/${theme_name}/g" "/etc/plymouth/plymouthd.conf"
 
     # Apply plymouth theme settings.
-    run_additional_command "plymouth-set-default-theme" "plymouth-set-default-theme ${theme_name}"
-else
+#    run_additional_command "plymouth-set-default-theme" "plymouth-set-default-theme ${theme_name}"
+#else
     # Delete the configuration file for plymouth.
-    remove "/etc/plymouth"
-fi
+#    remove "/etc/plymouth"
+#fi
 
 
 # Japanese
@@ -162,10 +162,10 @@ _safe_systemctl set-default graphical.target
 
 # Enable services.
 _safe_systemctl enable pacman-init.service
-_safe_systemctl enable cups.service
+#_safe_systemctl enable cups.service
 _safe_systemctl enable NetworkManager.service
-_safe_systemctl enable alteriso-reflector.service
-_safe_systemctl disable reflector.service
+#_safe_systemctl enable alteriso-reflector.service
+#_safe_systemctl disable reflector.service
 
 
 # TLP

@@ -10,9 +10,13 @@
 # package management
 
 #-- keyring --#
-alterlinux-keyring
+#alterlinux-keyring
+manjaro-keyring
+blackarch-keyring
 
 
 #-- mirrorlist --#
-alterlinux-mirrorlist
-reflector
+#alterlinux-mirrorlist
+blackarch-mirrorlist
+
+#reflector

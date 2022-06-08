@@ -1,0 +1,11 @@
+#
+# Uhuru OS package list
+#
+# infoengine1337
+# Twitter: @infoengine1337
+
+#-- Bitcoin --#
+electrum
+
+#-- Monero official client --#
+monero

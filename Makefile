@@ -2,7 +2,7 @@
 ARGS         :=
 BUILD_SCRIPT := build.sh
 KERNEL       := zen
-SHARE_OPTION := --boot-splash --comp-type "xz" --user "alter" --password "alter" --kernel "${KERNEL}" --noconfirm
+SHARE_OPTION := --boot-splash --comp-type "xz" --user "uhuru" --password "uhuru" --kernel "${KERNEL}" --noconfirm
 ARCH_x86_64  := --arch x86_64
 ARCH_i686    := --arch i686
 ARCH_Pen4    := --arch pen4
