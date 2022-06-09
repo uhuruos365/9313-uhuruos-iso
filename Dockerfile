@@ -1,14 +1,19 @@
-FROM manjarolinux/base:latest
+FROM manjarolinux/base:latest AS build-stage
 
 RUN pacman -Syyu --noconfirm \
-        git sudo python3 \
+        zsh wget git make sudo python3 \
         base-devel cmake ninja qt5-base \
-        archiso arch-install-scripts pyalpm wget squashfs-tools libisoburn
+        arch-install-scripts pyalpm squashfs-tools libisoburn
 
-RUN wget https://www.ftp.ne.jp/Linux/packages/blackarch/blackarch/os/x86_64/blackarch-keyring-20180925-5-any.pkg.tar.zst && pacman -U blackarch-keyring-20180925-5-any.pkg.tar.zst
+RUN wget https://www.ftp.ne.jp/Linux/packages/blackarch/blackarch/os/x86_64/blackarch-keyring-20180925-5-any.pkg.tar.zst && \
+        pacman --noconfirm -U blackarch-keyring-20180925-5-any.pkg.tar.zst
 COPY . /uhuruos
 WORKDIR /uhuruos
 RUN pacman-key --init
 RUN pacman-key --populate manjaro blackarch
+ENTRYPOINT ["./build.sh","-c","lz4", "xfce"]
+#RUN /bin/bash /uhuruos/build.sh -c lz4 xfce
 
-ENTRYPOINT ["./build.sh -c lz4 xfce"]
+#FROM scratch AS export-stage
+
+#COPY --from=build-stage /uhuruos/out /
