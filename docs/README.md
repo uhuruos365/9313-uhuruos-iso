@@ -25,7 +25,8 @@ Check this <a href="https://github.com/orgs/FascodeNet/projects/2">page</a>.  Th
 <h2> Edditions </h2>
 <h3> Loid Edition </h3>
 This edition is for users who wants to protect their privcacy.<br>
----This edition is under construction---
+---This edition is under construction---<br>
+<img src="../images/wallpapers/uhuru_loid.png" width="50%"><br>
 
 <h4> Pre-Installed packages</h4>
 <ul>
@@ -49,7 +50,8 @@ This edition is for users who wants to protect their privcacy.<br>
 
 <h3> Yor Edition </h3>
 This edition is for pentester.<br>
----This edition is under construction---
+---This edition is under construction---<br>
+<img src="../images/wallpapers/uhuru_yor.png" width="50%"><br>
 
 <h4> Pre-Installed packages</h4>
 <ul>
@@ -78,7 +80,8 @@ This edition is for pentester.<br>
 
 <h3> Anya Edition </h3>
 This edition purpose is launch Virtual Machine & container easily.<br>
----This edition is under construction---
+---This edition is under construction---<br>
+<img src="../images/wallpapers/uhuru_anya.png" width="50%"><br>
 
 <h4> Pre-Installed packages</h4>
 <ul>
