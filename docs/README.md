@@ -18,13 +18,13 @@ Check this <a href="https://github.com/orgs/FascodeNet/projects/2">page</a>.  Th
 <ul>
     <li>Manjaro Repository for stable update</li>
     <li>Sophisticated appearance (Thanks to Alter Linux)</li>
-    <li>pre-installed BlackArch Repository </li>
+    <li>Pre-installed BlackArch Repository </li>
     <li>Beautiful Theme (MidNight-BlueNight) </li>
 </ul>
 
 <h2> Edditions </h2>
 <h3> Loid Edition </h3>
-This edition is users who wants to protect their privcacy.
+This edition is for users who wants to protect their privcacy.<br>
 ---This edition is under construction---
 
 <h4> Pre-Installed packages</h4>
@@ -40,14 +40,15 @@ This edition is users who wants to protect their privcacy.
     <li>Electrum</li>
     <li>Electrum-ltc</li>
     <li>ElectronCash</li>
-    <li>Monero</li>
+    <li>Monero-GUI</li>
+    <li>monero-feather</li>
     <li>VeraCrypt</li>
-    <li>Riseup-VPN</li>
+    <li>RiseupVPN</li>
     <li>And...So on!</li>
 </ul>
 
 <h3> Yor Edition </h3>
-This edition is pentester.
+This edition is for pentester.<br>
 ---This edition is under construction---
 
 <h4> Pre-Installed packages</h4>
@@ -76,7 +77,7 @@ This edition is pentester.
 </ul>
 
 <h3> Anya Edition </h3>
-This edition purpose is launch Virtual Machine & container easily.
+This edition purpose is launch Virtual Machine & container easily.<br>
 ---This edition is under construction---
 
 <h4> Pre-Installed packages</h4>
