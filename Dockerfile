@@ -11,7 +11,7 @@ COPY . /uhuruos
 WORKDIR /uhuruos
 RUN pacman-key --init
 RUN pacman-key --populate manjaro blackarch
-ENTRYPOINT ["./build.sh","-c","lz4", "xfce"]
+ENTRYPOINT ["./build.sh","-c","zstd","--noloopmod","--noconfirm","xfce"]
 #RUN /bin/bash /uhuruos/build.sh -c lz4 xfce
 
 #FROM scratch AS export-stage
