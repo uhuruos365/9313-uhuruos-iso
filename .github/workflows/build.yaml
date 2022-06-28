@@ -34,10 +34,10 @@ jobs:
           pacman-mirrors --fasttrack
 
       - name: Install BlackArch keys
-      run: |
+        run: |
           wget https://www.ftp.ne.jp/Linux/packages/blackarch/blackarch/os/x86_64/blackarch-keyring-20180925-5-any.pkg.tar.zst && \
           pacman --noconfirm -U blackarch-keyring-20180925-5-any.pkg.tar.zst
-      
+
       - name: Populate keyrings
         run: |
           pacman-key --init
