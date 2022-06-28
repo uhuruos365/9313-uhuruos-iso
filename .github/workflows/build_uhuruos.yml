@@ -1,13 +1,13 @@
 # I used https://github.com/soracqt/myarch as a reference.
 # Thanks to soracqt(https://github.com/soracqt).
 
-name: CI
+name: Build Uhuru Image
 
 on:
   push:
-    branches: [ master ]
+    branches: [ dev ]
   pull_request:
-    branches: [ master ]
+    branches: [ dev ]
 
   schedule:
     - cron: '0 0 1 * *'
