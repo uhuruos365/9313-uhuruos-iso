@@ -1,0 +1,83 @@
+# I used https://github.com/soracqt/myarch as a reference.
+# Thanks to soracqt(https://github.com/soracqt).
+
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  schedule:
+    - cron: '0 0 1 * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: manjarolinux/base
+      volumes:
+        - /home/runner/work/uhurudir/uhurudir:/tmp/uhurudir
+      options: "--privileged"
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Required Packages
+        run: |
+          pacman -Syyu--noconfirm zsh wget git make sudo python3 base-devel cmake ninja qt5-base arch-install-scripts pyalpm squashfs-tools libisoburn dosfstools   
+          
+      - name: Fasttrack
+        run: |
+          pacman-mirrors --fasttrack
+
+      - name: Install BlackArch keys
+        run: |
+          wget https://www.ftp.ne.jp/Linux/packages/blackarch/blackarch/os/x86_64/blackarch-keyring-20180925-5-any.pkg.tar.zst && \
+          pacman --noconfirm -U blackarch-keyring-20180925-5-any.pkg.tar.zst
+
+      - name: Populate keyrings
+        run: |
+          pacman-key --init
+          pacman-key --populate manjaro blackarch
+        
+      - name: Build UhuruOS
+        run: ./build.sh -c zstd --noloopmod --noconfirm xfce
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: uhuru_x86_64
+          path: out
+
+  release:
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y.%m.%d')"
+
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: uhuru_x86_64
+
+      - name: Create release
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.date.outputs.date }}
+          name: ${{ steps.date.outputs.date }}
+          draft: false
+          prerelease: false
+          files: |
+           UhuruOS-*-x86_64.iso
+
+
