@@ -20,8 +20,8 @@ _safe_systemctl enable bluetooth
 
 
 # Added autologin group to auto login
-#_groupadd autologin
-#usermod -aG autologin ${username}
+_groupadd autologin
+usermod -aG autologin ${username}
 
 
 # ntp

@@ -92,9 +92,9 @@ create_user "${username}" "${password}"
 
 
 # Set up auto login
-#if [[ -f "/etc/systemd/system/getty@.service.d/autologin.conf" ]]; then
-#    sed -i "s|%USERNAME%|${username}|g" "/etc/systemd/system/getty@.service.d/autologin.conf"
-#fi
+if [[ -f "/etc/systemd/system/getty@.service.d/autologin.conf" ]]; then
+    sed -i "s|%USERNAME%|${username}|g" "/etc/systemd/system/getty@.service.d/autologin.conf"
+fi
 
 
 # Set to execute sudo without password as alter user.
