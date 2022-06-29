@@ -44,7 +44,7 @@ jobs:
           pacman-key --populate manjaro blackarch
         
       - name: Build UhuruOS
-        run: ./build.sh -c zstd --noloopmod --noconfirm xfce
+        run: ./build.sh -c lzma --noloopmod --noconfirm xfce
 
       - name: Upload artifact
         uses: actions/upload-artifact@v1
