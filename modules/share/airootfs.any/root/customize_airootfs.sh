@@ -110,6 +110,9 @@ chown root:root -R /etc/sudoers.d/
 
 
 # Configure Plymouth settings
+# Plymouth is disabled...
+remove "/etc/plymouth"
+
 #if [[ "${boot_splash}" = true ]]; then
     # Override plymouth settings.
 #    sed -i "s/%PLYMOUTH_THEME%/${theme_name}/g" "/etc/plymouth/plymouthd.conf"

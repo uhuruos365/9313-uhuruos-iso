@@ -8,6 +8,8 @@
 #
 
 # Enable LightDM to auto login
+# plymouth is disabled...
+
 systemctl enable lightdm.service
 
 
