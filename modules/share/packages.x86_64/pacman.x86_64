@@ -16,7 +16,4 @@ blackarch-keyring
 
 
 #-- mirrorlist --#
-#alterlinux-mirrorlist
 blackarch-mirrorlist
-
-#reflector

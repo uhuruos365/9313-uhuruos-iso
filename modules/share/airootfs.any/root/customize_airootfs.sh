@@ -12,13 +12,13 @@ set -e -u
 
 # Default value
 # All values can be changed by arguments.
-password=alter
+password=uhuru
 boot_splash=false
 kernel_config_line=("zen" "vmlinuz-linux-zen" "linux-zen")
-theme_name=alter-logo
-username='alter'
-os_name="Alter Linux"
-install_dir="alter"
+theme_name=uhuru-logo
+username='uhuru'
+os_name="Uhuru OS"
+install_dir="uhuru"
 usershell="/bin/bash"
 debug=false
 timezone="UTC"
