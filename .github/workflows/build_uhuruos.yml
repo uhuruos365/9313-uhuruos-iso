@@ -24,14 +24,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      
+      - name: Fasttrack
+        run: |
+          pacman-mirrors --fasttrack
 
       - name: Install Required Packages
         run: |
           pacman -Syyu --noconfirm zsh wget git make sudo python3 base-devel cmake ninja qt5-base arch-install-scripts pyalpm squashfs-tools libisoburn dosfstools   
-          
-      - name: Fasttrack
-        run: |
-          pacman-mirrors --fasttrack
 
       - name: Install BlackArch keys
         run: |
@@ -44,7 +44,7 @@ jobs:
           pacman-key --populate manjaro blackarch
         
       - name: Build UhuruOS
-        run: ./build.sh -c zstd --noloopmod --noconfirm xfce
+        run: ./build.sh -c lzma --noloopmod --noconfirm xfce
 
       - name: Upload artifact
         uses: actions/upload-artifact@v1
