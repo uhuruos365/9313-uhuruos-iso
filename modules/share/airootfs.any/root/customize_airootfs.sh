@@ -101,7 +101,7 @@ fi
 cat >> /etc/sudoers << "EOF"
 Defaults pwfeedback
 EOF
-echo "${username} ALL=NOPASSWD: ALL" >> /etc/sudoers.d/alterlive
+echo "${username} ALL=NOPASSWD: ALL" >> /etc/sudoers.d/uhurulive
 
 
 # Chnage sudoers permission
@@ -139,10 +139,10 @@ echo "${kernel_filename}" > /root/kernel_filename
 sed -i "s/%OS_NAME%/${os_name}/g" "/usr/lib/os-release"
 
 
-# Enable root login with SSH.
-if [[ -f "/etc/ssh/sshd_config" ]]; then
-    sed -i 's/#\(PermitRootLogin \).\+/\1yes/' "/etc/ssh/sshd_config"
-fi
+# Enable root login with SSH. (disabled because of security.)
+#if [[ -f "/etc/ssh/sshd_config" ]]; then
+#    sed -i 's/#\(PermitRootLogin \).\+/\1yes/' "/etc/ssh/sshd_config"
+#fi
 
 # Un comment the mirror list.
 sed -i "s/#Server/Server/g" "/etc/pacman.d/mirrorlist"
