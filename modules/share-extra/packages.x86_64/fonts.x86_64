@@ -12,6 +12,8 @@
 
 # font
 adobe-source-code-pro-fonts
-noto-fonts
-noto-fonts-cjk
-noto-fonts-emoji
+otf-ipafont
+
+#noto-fonts
+#noto-fonts-cjk
+#noto-fonts-emoji
