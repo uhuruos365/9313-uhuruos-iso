@@ -44,13 +44,13 @@ jobs:
           pacman-key --populate manjaro blackarch
         
       - name: Build UhuruOS minimal xfce edition
-        run: ./build.sh -c zstd --noloopmod --noconfirm xfce
+        run: ./build.sh -c zstd --noloopmod --noconfirm -t "-Xcompression-level 22" xfce
 
       - name: Build UhuruOS Anya Edition
-        run: ./build.sh -c zstd --noloopmod --noconfirm xfce_anya
+        run: ./build.sh -c zstd --noloopmod --noconfirm -t "-Xcompression-level 22" xfce_anya
 
       - name: Build UhuruOS Yor Edition
-        run: ./build.sh -c zstd --noloopmod --noconfirm xfce_yor
+        run: ./build.sh -c zstd --noloopmod --noconfirm -t "-Xcompression-level 22" xfce_yor
 
       - name: Upload artifact
         uses: actions/upload-artifact@v1
