@@ -6,7 +6,7 @@
 
 #-- Signal and Session --#
 signal-desktop
-session-desktop
+session-desktop-bin
 
 #-- Gajim OMEMO Plugin --#
 gajim-plugin-omemo
