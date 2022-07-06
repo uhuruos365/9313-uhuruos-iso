@@ -12,3 +12,6 @@ gajim
 
 #-- Telegram --#
 telegram-desktop
+
+#-- Signal --#
+signal-desktop
