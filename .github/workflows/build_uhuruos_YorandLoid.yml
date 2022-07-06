@@ -10,7 +10,7 @@ on:
     branches: [ dev ]
 
   schedule:
-    - cron: '0 0 1 * *'
+    - cron: '0 12 0 * *'
   workflow_dispatch:
 
 jobs:
@@ -43,10 +43,10 @@ jobs:
           pacman-key --init
           pacman-key --populate manjaro blackarch
         
-      - name: Build UhuruOS minimal xfce edition
+      - name: Build UhuruOS Loid edition
         run: ./build.sh -c zstd --noloopmod --noconfirm -t "-Xcompression-level 22" xfce_loid
 
-      - name: Build UhuruOS Anya Edition
+      - name: Build UhuruOS Yor Edition
         run: ./build.sh -c zstd --noloopmod --noconfirm -t "-Xcompression-level 22" xfce_yor
 
 
