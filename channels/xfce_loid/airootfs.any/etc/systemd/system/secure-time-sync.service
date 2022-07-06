@@ -1,0 +1,11 @@
+[Unit]
+Description=Secure time sync
+
+[Service]
+Type=simple
+ExecStart=/usr/lib/obscurix/secure-time-sync --use-tor
+Restart=on-failure
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
