@@ -5,7 +5,7 @@
 # Twitter: @infoengine1337
 
 #-- Signal and Session --#
-signal-desktop
+signal-desktop-bin
 session-desktop-bin
 
 #-- Gajim OMEMO Plugin --#

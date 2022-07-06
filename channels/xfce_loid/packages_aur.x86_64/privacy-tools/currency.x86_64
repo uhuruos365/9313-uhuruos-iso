@@ -8,7 +8,7 @@
 electrum-ltc
 
 #-- BitCash --#
-electron-cash
+electron-cash-bin
 
 #-- Monero (Lite Client) --#
 monero-feather-bin
