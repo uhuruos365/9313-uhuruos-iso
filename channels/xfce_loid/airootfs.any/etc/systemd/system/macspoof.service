@@ -1,0 +1,10 @@
+[Unit]
+Description=Spoofs MAC addresses
+Wants=network-pre.target
+Before=network-pre.target
+
+[Service]
+ExecStart=/usr/lib/obscurix/spoof-mac-address
+
+[Install]
+WantedBy=multi-user.target

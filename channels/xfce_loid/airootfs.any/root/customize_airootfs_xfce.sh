@@ -27,6 +27,18 @@ else
     remove "/home/${username}/.config/Thunar/uca.xml.jp"
 fi
 
+# Create Zeronet user.
+useradd --system --user-group -m --home /var/lib/zeronet zeronet
+usermod -a -G tor zeronet
+
+# Enable some Services
+
+_safe_systemctl mask systemd-timesyncd.service
+_safe_systemctl enable iptables.service macspoof.service NetworkManager.service dnsmasq.service secure-time-sync.service onion-grater.service
+
+#mask tor and zeronet
+_safe_systemctl mask tor.service zeronet.service
+
 # Change Theme
 
 #sed -i -E 's@(^    <property name="theme" type="string" value=").*("/>$)@\1Midnight-BlueNight\2@g' "/home/${username}/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml"

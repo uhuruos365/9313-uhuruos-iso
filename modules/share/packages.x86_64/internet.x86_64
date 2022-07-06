@@ -33,7 +33,7 @@ aria2
 
 #-- server --#
 #darkhttpd
-#dnsmasq
+dnsmasq
 
 
 

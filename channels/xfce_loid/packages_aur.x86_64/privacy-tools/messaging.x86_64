@@ -9,5 +9,5 @@ signal-desktop
 session-desktop
 
 #-- Gajim OMEMO Plugin --#
-gajim-omemo-plugin
+gajim-plugin-omemo
 
