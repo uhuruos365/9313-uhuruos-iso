@@ -4,13 +4,8 @@
 # infoengine1337
 # Twitter: @infoengine1337
 
-#-- macchanger --#
-macchanger
-
 #-- Tor --#
-tor
 torbrowser-launcher
-nyx
 
 #-- proxychains --#
 proxychains-ng

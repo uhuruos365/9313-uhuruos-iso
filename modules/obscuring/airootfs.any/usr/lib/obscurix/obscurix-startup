@@ -34,8 +34,8 @@ start_tor() {
     systemctl enable --now tor.service
 
     # Start zeronet.
-    systemctl unmask zeronet.service
-    systemctl enable --now zeronet.service
+    #ystemctl unmask zeronet.service
+    #systemctl enable --now zeronet.service
 
     sleep 3
   fi
