@@ -189,7 +189,7 @@ cleanup(){
     killall -u "${aur_username}" -9
     
     # Insert debug
-    ps alxf
+    #ps alxf
     
     # remove user and file
     userdel "${aur_username}"
