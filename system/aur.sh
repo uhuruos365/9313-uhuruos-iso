@@ -183,6 +183,9 @@ cleanup(){
     # Clean up
     "${aur_helper_command}" -Sccc "${pacman_args[@]}" || true
 
+    # Insert debug
+    ps aux
+    
     # remove user and file
     userdel "${aur_username}"
     remove /aurbuild_temp
