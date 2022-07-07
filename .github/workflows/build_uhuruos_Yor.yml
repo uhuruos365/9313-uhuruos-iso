@@ -47,7 +47,7 @@ jobs:
       - if: failure()
         run: |
             echo "Build failed"
-            pacman -S procps
+            pacman --noconfirm -S procps
             ps aux
 
       - name: Upload artifact
