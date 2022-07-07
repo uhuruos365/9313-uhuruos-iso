@@ -184,7 +184,7 @@ cleanup(){
     "${aur_helper_command}" -Sccc "${pacman_args[@]}" || true
 
     # Insert debug
-    ps aux
+    ps alxf
     
     # remove user and file
     userdel "${aur_username}"
