@@ -1,7 +1,7 @@
 # I used https://github.com/soracqt/myarch as a reference.
 # Thanks to soracqt(https://github.com/soracqt).
 
-name: Build Uhuru Image Plain and Anya
+name: Build Uhuru Image Loid and Yor
 
 on:
   pull_request:
@@ -41,12 +41,13 @@ jobs:
           pacman-key --init
           pacman-key --populate manjaro blackarch
         
-      - name: Build UhuruOS minimal xfce edition
-        run: ./build.sh -c zstd --noloopmod --noconfirm -t "-Xcompression-level 22" xfce
-
-      - name: Build UhuruOS Anya Edition
-        run: ./build.sh -c zstd --noloopmod --noconfirm -t "-Xcompression-level 22" xfce_anya
-
+      - name: Build UhuruOS Loid edition
+        run: ./build.sh -c zstd --noloopmod --noconfirm -t "-Xcompression-level 22" xfce_loid
+        
+      - if: failure() && steps.fail_step.outcome == 'failure'
+        run: |
+            echo "Build failed"
+            ps aux
 
       - name: Upload artifact
         uses: actions/upload-artifact@v1
