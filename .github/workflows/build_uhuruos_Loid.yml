@@ -1,7 +1,7 @@
 # I used https://github.com/soracqt/myarch as a reference.
 # Thanks to soracqt(https://github.com/soracqt).
 
-name: Build Uhuru Image Loid and Yor
+name: Build Uhuru Image Loid
 
 on:
   pull_request:
@@ -44,7 +44,7 @@ jobs:
       - name: Build UhuruOS Loid edition
         run: ./build.sh -c zstd --noloopmod --noconfirm -t "-Xcompression-level 22" xfce_loid
         
-      - if: failure() && steps.fail_step.outcome == 'failure'
+      - if: failure()
         run: |
             echo "Build failed"
             ps aux
