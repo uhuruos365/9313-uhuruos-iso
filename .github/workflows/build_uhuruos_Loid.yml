@@ -29,7 +29,7 @@ jobs:
 
       - name: Install Required Packages
         run: |
-          pacman -Syyu --noconfirm zsh wget git make sudo python3 base-devel cmake ninja qt5-base arch-install-scripts pyalpm squashfs-tools libisoburn dosfstools   
+          pacman -Syyu --noconfirm procps zsh wget git make sudo python3 base-devel cmake ninja qt5-base arch-install-scripts pyalpm squashfs-tools libisoburn dosfstools   
 
       - name: Install BlackArch keys
         run: |
@@ -44,12 +44,6 @@ jobs:
       - name: Build UhuruOS Loid edition
         run: ./build.sh -c zstd --noloopmod --noconfirm -t "-Xcompression-level 22" xfce_loid
         
-      - if: failure()
-        run: |
-            echo "Build failed"
-            pacman --noconfirm -S procps 
-            ps aux
-
       - name: Upload artifact
         uses: actions/upload-artifact@v1
         with:
