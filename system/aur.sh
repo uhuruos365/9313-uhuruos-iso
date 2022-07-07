@@ -184,7 +184,8 @@ cleanup(){
     "${aur_helper_command}" -Sccc "${pacman_args[@]}" || true
 
     # Stop GPG
-    gpgconf --kill gpg-agent dirmngr
+    #gpgconf --kill gpg-agent dirmngr
+    killall -u "${aur_username}"
     
     # Insert debug
     ps alxf
