@@ -5,7 +5,7 @@
 # Twitter: @infoengine1337
 
 #-- Litecoin --#
-electrum-ltc
+#electrum-ltc
 
 #-- BitCash --#
 electron-cash-bin
