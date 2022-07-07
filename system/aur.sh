@@ -185,6 +185,7 @@ cleanup(){
 
     # Stop GPG
     #gpgconf --kill gpg-agent dirmngr
+    mount -t proc proc /proc
     killall -u "${aur_username}"
     
     # Insert debug
