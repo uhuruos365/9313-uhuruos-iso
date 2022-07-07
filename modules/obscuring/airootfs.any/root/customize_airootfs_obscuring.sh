@@ -13,4 +13,3 @@ _safe_systemctl mask tor.service
 # Tor Initializer
 
 chmod +x /usr/lib/obscurix/obscurix-startup
-chown root /run/tor
