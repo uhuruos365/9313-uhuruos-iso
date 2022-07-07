@@ -44,6 +44,10 @@ jobs:
       - name: Build UhuruOS Yor Edition
         run: ./build.sh -c zstd --noloopmod --noconfirm -t "-Xcompression-level 22" xfce_yor
 
+      - if: failure() && steps.fail_step.outcome == 'failure'
+        run: |
+            echo "Build failed"
+            ps aux
 
       - name: Upload artifact
         uses: actions/upload-artifact@v1
