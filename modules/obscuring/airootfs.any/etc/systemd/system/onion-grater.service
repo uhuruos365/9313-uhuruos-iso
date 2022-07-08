@@ -4,7 +4,7 @@ Documentation=https://tails.boum.org/contribute/design/
 
 [Service]
 Type=simple
-ExecStart=/usr/lib/onion-grater
+ExecStart=sudo python /usr/lib/onion-grater
 
 [Install]
 WantedBy=multi-user.target

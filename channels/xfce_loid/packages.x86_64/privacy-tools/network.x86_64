@@ -4,9 +4,6 @@
 # infoengine1337
 # Twitter: @infoengine1337
 
-#-- Tor --#
-torbrowser-launcher
-
 #-- proxychains --#
 proxychains-ng
 
