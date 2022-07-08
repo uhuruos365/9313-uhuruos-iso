@@ -71,8 +71,8 @@ jobs:
 
       - name: Split ISO Images
         run: |
-          ls UhuruOS-xfce_loid-en-* | xargs -n1 -I{} bash -c "split -b1500m {} {}_splitted_ ; rm {}"
-          ls UhuruOS-xfce_yor-en-* | xargs -n1 -I{} bash -c "split -b1500m {} {}_splitted_ ; rm {}"
+          ls UhuruOS-xfce_loid-en-*.iso | xargs -n1 -I{} bash -c "split -b1500m {} {}_splitted_ ; rm {}"
+          ls UhuruOS-xfce_yor-en-*.iso | xargs -n1 -I{} bash -c "split -b1500m {} {}_splitted_ ; rm {}"
 
       - name: Create release
         uses: softprops/action-gh-release@v1
@@ -84,6 +84,6 @@ jobs:
           draft: false
           prerelease: false
           files: |
-           UhuruOS-*
+           UhuruOS-*x86_64.iso_splitted_*
 
 
