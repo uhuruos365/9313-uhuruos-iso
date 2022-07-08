@@ -1,7 +1,7 @@
 # I used https://github.com/soracqt/myarch as a reference.
 # Thanks to soracqt(https://github.com/soracqt).
 
-name: Build Uhuru Image
+name: Build Uhuru Image Loid And Yor
 
 on:
   pull_request:
@@ -41,12 +41,6 @@ jobs:
           pacman-key --init
           pacman-key --populate manjaro blackarch
         
-      - name: Build UhuruOS Plain edition
-        run: ./build.sh -c zstd --noloopmod --noconfirm xfce
-
-      - name: Build UhuruOS Anya edition
-        run: ./build.sh -c zstd --noloopmod --noconfirm xfce_anya
-
       - name: Build UhuruOS Loid edition
         run: ./build.sh -c zstd --noloopmod --noconfirm xfce_loid
 
@@ -68,7 +62,7 @@ jobs:
 
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%Y.%m.%d')"
+        run: echo "::set-output name=date::$(date +'%Y.%m.%d')_LoidAndYor"
 
       - name: Download artifact
         uses: actions/download-artifact@v2
