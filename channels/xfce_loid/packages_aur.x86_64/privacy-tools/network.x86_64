@@ -8,7 +8,7 @@
 #tor-browser
 
 #-- Tor monitoring --#
-arm
+#arm
 
 #-- Browser --#
 librewolf-bin
