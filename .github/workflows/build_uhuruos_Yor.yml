@@ -3,10 +3,6 @@
 
 name: Build Uhuru Image Yor
 
-on:
-  pull_request:
-    branches: [ dev ]
-
   workflow_dispatch:
 
 jobs:
