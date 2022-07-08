@@ -7,6 +7,9 @@
 #-- Tor Browser --#
 #tor-browser
 
+#-- Tor monitoring --#
+#arm
+
 #-- Browser --#
 librewolf-bin
 
