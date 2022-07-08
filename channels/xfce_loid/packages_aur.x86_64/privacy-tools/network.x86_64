@@ -8,7 +8,7 @@
 #tor-browser
 
 #-- Browser --#
-librewolf
+librewolf-bin
 
 #-- Riseup-VPN --#
 #riseup-vpn
