@@ -4,6 +4,11 @@
 name: Build Uhuru Image Yor
 
 on:
+  pull_request:
+    branches: [ dev ]
+
+  schedule:
+    - cron: '0 12 * * *'
   workflow_dispatch:
 
 jobs:
@@ -35,10 +40,10 @@ jobs:
         run: |
           pacman-key --init
           pacman-key --populate manjaro blackarch
-        
-      - name: Build UhuruOS Yor Edition
-        run: ./build.sh -c zstd --noloopmod --noconfirm -t "-Xcompression-level 22" xfce_yor
 
+      - name: Build UhuruOS Yor edition
+        run: ./build.sh -c zstd --noloopmod --noconfirm xfce_yor
+        
       - name: Upload artifact
         uses: actions/upload-artifact@v1
         with:
@@ -54,12 +59,16 @@ jobs:
 
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%Y.%m.%d')"
+        run: echo "::set-output name=date::$(date +'%Y.%m.%d')_Yor"
 
       - name: Download artifact
         uses: actions/download-artifact@v2
         with:
           name: uhuru_x86_64
+
+      - name: Split ISO Images
+        run: |
+          ls UhuruOS-xfce_yor-en-*.iso | xargs -n1 -I{} bash -c "split -b1500m {} {}_splitted_ ; rm {}"
 
       - name: Create release
         uses: softprops/action-gh-release@v1
@@ -71,6 +80,6 @@ jobs:
           draft: false
           prerelease: false
           files: |
-           UhuruOS-*-x86_64.iso
+           UhuruOS-*x86_64.iso_splitted_*
 
 
