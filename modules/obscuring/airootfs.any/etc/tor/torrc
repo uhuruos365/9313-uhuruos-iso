@@ -11,6 +11,7 @@
 ##
 ## Tor will look for this file in various places based on your platform:
 ## https://www.torproject.org/docs/faq#torrc
+User tor
 
 ## Tor opens a socks proxy on port 9050 by default -- even if you don't
 ## configure one below. Set "SocksPort 0" if you plan to run Tor only
@@ -223,4 +224,5 @@ ControlPort 9152
 # onion-grater changes.
 ControlSocket /run/tor/control
 CookieAuthentication 1
-CookieAuthFile /run/tor/control.authcookie
+#CookieAuthFile /run/tor/control.authcookie
+CookieAuthFile /var/lib/tor/control.authcookie
