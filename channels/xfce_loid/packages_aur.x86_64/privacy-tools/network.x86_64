@@ -5,7 +5,10 @@
 # Twitter: @infoengine1337
 
 #-- Tor Browser --#
-tor-browser
+#tor-browser
+
+#-- Browser --#
+librewolf
 
 #-- Riseup-VPN --#
 #riseup-vpn
