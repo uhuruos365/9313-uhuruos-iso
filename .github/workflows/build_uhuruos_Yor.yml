@@ -3,6 +3,7 @@
 
 name: Build Uhuru Image Yor
 
+on:
   workflow_dispatch:
 
 jobs:
