@@ -223,7 +223,7 @@ AvoidDiskWrites 1
 ControlPort 9152
 
 # onion-grater changes.
-ControlSocket /run/tor/control
+ControlSocket /var/lib/tor/control
 CookieAuthentication 1
-#CookieAuthFile /run/tor/control.authcookie
+#CookieAuthFile /var/lib/tor/control.authcookie
 CookieAuthFile /var/lib/tor/control.authcookie
