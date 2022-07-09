@@ -27,6 +27,9 @@ else
     remove "/home/${username}/.config/Thunar/uca.xml.jp"
 fi
 
+# WPScan Update
+wpscan --update
+
 # Change Theme
 
 #sed -i -E 's@(^    <property name="theme" type="string" value=").*("/>$)@\1Midnight-BlueNight\2@g' "/home/${username}/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml"
