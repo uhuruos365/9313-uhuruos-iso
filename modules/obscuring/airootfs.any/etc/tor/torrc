@@ -195,6 +195,7 @@ TransPort 9040
 DNSPort 5353
 AutomapHostsOnResolve 1
 AutomapHostsSuffixes .exit,.onion
+VirtualAddrNetwork 10.192.0.0/10
 
 # Tor Browser SocksPort.
 SocksPort 9150 IsolateSOCKSAuth KeepAliveIsolateSOCKSAuth
