@@ -1,0 +1,15 @@
+#!/bin/bash
+
+switch2en() {
+  # Ask if the user needs to use a bridge.
+  if zenity --question --no-wrap --text="Do you want to switch en-us keylayout and input mode? "; then
+
+    killall fcitx
+    setxkbmap us
+
+  else
+    :
+  fi
+}
+
+switch2en
