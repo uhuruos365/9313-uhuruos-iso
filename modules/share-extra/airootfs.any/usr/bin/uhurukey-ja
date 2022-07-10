@@ -1,0 +1,13 @@
+#!/bin/bash
+
+switch2ja() {
+  if zenity --question --no-wrap --text="Do you want to switch ja-jp keylayout and input mode? "; then
+
+    fcitx-autostart
+
+  else
+    :
+  fi
+}
+
+switch2ja
