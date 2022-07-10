@@ -36,4 +36,4 @@ fi
 
 # Change aurorun files permission
 chmod 755 "/home/${username}/.config/autostart/"* "/etc/skel/.config/autostart/"* || true
-chmod +x /usr/bin/fcitxsetup-uhuru
+chmod +x /usr/bin/uhurukey-en /usr/bin/uhurukey-ja
