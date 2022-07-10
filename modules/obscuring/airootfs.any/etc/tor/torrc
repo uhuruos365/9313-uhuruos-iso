@@ -220,7 +220,7 @@ SocksPort 9042 IsolateDestAddr IsolateDestPort
 AvoidDiskWrites 1
 
 # Tor Control Port.
-ControlPort 9051
+ControlPort 9151
 
 # onion-grater changes.
 ControlSocket /run/tor/control
