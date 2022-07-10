@@ -225,5 +225,5 @@ ControlPort 9051
 # onion-grater changes.
 ControlSocket /run/tor/control
 CookieAuthentication 1
-#CookieAuthFile /var/lib/tor/control.authcookie
+#CookieAuthFile /run/tor/control.authcookie
 CookieAuthFile /var/lib/tor/control.authcookie
