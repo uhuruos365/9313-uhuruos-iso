@@ -68,8 +68,7 @@ This edition is for pentester.<br>
 </ul>
 
 <h3> Anya Edition </h3>
-This edition purpose is launch Virtual Machine & container easily.<br>
----This edition is under construction---<br>
+This edition purpose is launching VM & container easily.<br>
 <img src="../images/wallpapers/uhuru_anya.png" width="50%"><br>
 
 <h4> Pre-Installed packages</h4>
