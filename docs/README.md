@@ -5,63 +5,56 @@
 </p>
 
 <h2> Overview </h2>
-UhuruOS is a Hackers' Linux Distribution based on Arch Linux and so on. <br>
+UhuruOS is a Hackers' Linux Distribution derived from Arch Linux and etc. <br>
 
 <br>
 <img src="../images/screenshot/UhuruOS_screenshot.png" width="50%">
 <br>
 
-This cool terminal configration is based on Alter Linux. 
-Check this <a href="https://github.com/orgs/FascodeNet/projects/2">page</a>.  Thanks to FascodeNetwok and developers.
+We owe this wonderful design to Alter Linux, developed by Fascode Network Project.
+Please visit <a href="https://github.com/FascodeNet/alterlinux">this page</a>. <br>
+Thanks to Fascode Network and other developers of Alter Linux.
 
 <h2> Features </h2>
 <ul>
-    <li>Manjaro Repository for stable update</li>
-    <li>Sophisticated appearance (Thanks to Alter Linux)</li>
-    <li>Pre-installed BlackArch Repository </li>
-    <li>Beautiful Theme (MidNight-BlueNight) </li>
+    <li>Manjaro Repository for stable updates</li>
+    <li>Sophisticated Appearance (based on <a href="https://github.com/FascodeNet/alterlinux">Alter Linux</a>)</li>
+    <li>Pre-installed <a href="https://blackarch.org/tools.html">BlackArch</a> Repository (Pentester-Friendly!!) </li>
+    <li>the Beautiful Theme <a href="https://github.com/i-mint/midnight">(MidNight-BlueNight Theme)</a> </li>
 </ul>
 
 <h2> Edditions </h2>
 <h3> Loid Edition </h3>
-This edition is for users who wants to protect their privcacy.<br>
----This edition is under construction---<br>
+This is the edition aimed at preserving Privacy and Anonymity.<br>
 <img src="../images/wallpapers/uhuru_loid.png" width="50%"><br>
+Some utilities of Loid Edition are based on <a href="https://github.com/Obscurix/Obscurix">Obscurix Linux</a>.<br>
 
 <h4> Pre-Installed packages</h4>
 <ul>
-    <li>Tor</li>
-    <li>TorBrowser-Launcher</li>
-    <li>ProxyChains</li>
-    <li>Telegram</li>
-    <li>Signal</li>
-    <li>Session</li>
-    <li>Thunderbird (EMail client)</li>
-    <li>Gajim (XMPP client)</li>
-    <li>Electrum</li>
-    <li>Electrum-ltc</li>
-    <li>ElectronCash</li>
-    <li>Monero-GUI</li>
-    <li>monero-feather</li>
-    <li>VeraCrypt</li>
-    <li>RiseupVPN</li>
-    <li>And...So on!</li>
+    <li>Tor - a anonymizing network</li>
+    <li>Nyx - a command-line monitor for Tor</li>
+    <li>LibreWolf - a Privacy-focuced Browser forked from Firefox</li>
+    <li>Zeronet - a decentralized peer-2-peer network</li>
+    <li>ProxyChains - a utility for connecting with proxy</li>
+    <li>Thunderbird - standard email client</li>
+    <li>Gajim - XMPP client</li>
+    <li>Messangers (such as Telegram, Signal, Session)</li>
+    <li>Crypto Wallet (such as Electrum(Bitcoin), Electrum-ltc(Litecoin), ElectronCash(Bitcoin-cash), Monero-GUI, feather-wallet(monero))</li>
+    <li>VeraCrypt - storage encrypting utility</li>
+    <li>And more...</li>
 </ul>
 
 <h3> Yor Edition </h3>
 This edition is for pentester.<br>
----This edition is under construction---<br>
 <img src="../images/wallpapers/uhuru_yor.png" width="50%"><br>
 
 <h4> Pre-Installed packages</h4>
 <ul>
-    <li>nmap</li>
-    <li>Rustscan</li>
-    <li>masscan</li>
-    <li>sublist3r</li>
-    <li>dnsrecon</li>
-    <li>ffuf</li>
-    <li>seclists</li>
+    <li>Port Scanner (such as nmap, Rustscan, masscan)</li>
+    <li>Subdomain reconing (such as sublist3r, dnsrecon, subfinder, dnsvalidator)/li>
+    <li>Passive reconing (such as theHarverster, spiderfoot)</li>
+    <li>Google Dorking (udork)</li>
+    <li>Directory Enum (such as )</li>
     <li>mitmproxy</li>
     <li>nikto</li>
     <li>metasploit</li>
