@@ -5,9 +5,4 @@
 # Twitter: @infoengine1337
 
 #-- VirtualBox --#
-#virtualbox
-#virtualbox-host-dkms
-
-#-- Container --"
-lxd
-docker
+virtualbox-bin
