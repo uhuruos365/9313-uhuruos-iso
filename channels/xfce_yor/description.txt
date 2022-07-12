@@ -1,1 +1,1 @@
-Use Xfce4 for desktop environment.
+This is the edition aimed at Pentesting and Offensive Security.
