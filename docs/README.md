@@ -1,11 +1,10 @@
-Uhuru OS - a Hackers' Linux Distribution based on Arch Linux
-------------------------------------------------------------
 <p align="center">
     <img src="../images/logo/UhuruOS_logo.png" alt="Uhuru OS logo">
 </p>
 <h1 align="center">Uhuru OS</h1>
 <p align="center">
-  <h3> Hackers' Linux Distribution derived from Arch Linux and etc.<br> </h3>
+  <a> Hackers' Linux Distribution derived from Arch Linux and etc.<br> </a>
+  <br>
   <img src="https://img.shields.io/badge/base-Archlinux-1793AD.svg?logo=archlinux&style=popout">
   <img src="https://img.shields.io/github/stars/infoengine1337/uhuruos?color=yellow&style=popout&logo=github%22">
   <img src="https://img.shields.io/github/forks/infoengine1337/uhuruos?color=blue&style=popout&logo=github%22">
