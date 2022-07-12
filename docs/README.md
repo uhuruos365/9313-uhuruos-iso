@@ -41,7 +41,7 @@ Some utilities of Loid Edition are based on <a href="https://github.com/Obscurix
     <li>Messangers (such as Telegram, Signal, Session)</li>
     <li>Crypto Wallet (such as Electrum(Bitcoin), Electrum-ltc(Litecoin), ElectronCash(Bitcoin-cash), Monero-GUI, feather-wallet(monero))</li>
     <li>VeraCrypt - storage encrypting utility</li>
-    <li>And more...</li>
+    <li>And more... </li>
 </ul>
 
 <h3> Yor Edition </h3>
@@ -54,21 +54,17 @@ This edition is for pentester.<br>
     <li>Subdomain reconing (such as sublist3r, dnsrecon, subfinder, dnsvalidator)/li>
     <li>Passive reconing (such as theHarverster, spiderfoot)</li>
     <li>Google Dorking (udork)</li>
-    <li>Directory Enum (such as )</li>
-    <li>mitmproxy</li>
-    <li>nikto</li>
-    <li>metasploit</li>
-    <li>sploitctl(searchsploit and etc)</li>
-    <li>sqlmap</li>
-    <li>wpscan</li>
-    <li>droopescan</li>
-    <li>magescan</li>
-    <li>wireshark-qt</li>
-    <li>wireshark-cli</li>
-    <li>tcpdump</li>
-    <li>hydra</li>
-    <li>john</li>
-    <li>...And so on!</li>
+    <li>Directory Enum (such as gobuster, dirb)</li>
+    <li>Fuzzing (such as ffuf, feroxbuster)</li>
+    <li>Crawler (such as hakrawler, dirhunt, kiterunner, gospider)</li>
+    <li>Scanner (such as whatweb, nikto)</li>
+    <li>metasploit - Exploit</li>
+    <li>sqlmap - SQL Injection</li>
+    <li>astra - attack to RESTAPI</li>
+    <li>SQL Injection(sqlmap)</li>
+    <li>attack to CMS(such as vulnx, wpscan, droopescan, magescan)</li>
+    <li>Some useful Utilities (sploitctl, mitmproxy, chisel, sshuttle, veli, ...)
+    <li>And more... </li>
 </ul>
 
 <h3> Anya Edition </h3>
