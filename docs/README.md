@@ -45,7 +45,7 @@ Some utilities of Loid Edition are based on <a href="https://github.com/Obscurix
 </ul>
 
 <h3> Yor Edition </h3>
-This edition is for pentester.<br>
+This is the edition aimed at Pentesting and Offensive Security.<br>
 <img src="../images/wallpapers/uhuru_yor.png" width="50%"><br>
 
 <h4> Pre-Installed packages</h4>
@@ -77,4 +77,5 @@ This edition purpose is launching VM & container easily.<br>
     <li>Docker</li>
     <li>lxd</li>
 </ul>
+
 
