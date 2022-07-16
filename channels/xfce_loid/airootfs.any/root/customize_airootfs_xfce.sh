@@ -37,5 +37,6 @@ fi
 useradd --system --user-group -m --home /var/lib/zeronet zeronet
 usermod -a -G tor zeronet
 
-#mask zeronet
+# Enable zeronet
 _safe_systemctl enable zeronet.service
+chmod +x /usr/lib/start-zeronet

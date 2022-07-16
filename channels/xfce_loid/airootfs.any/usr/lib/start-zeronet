@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if ! (systemctl -q is-active zeronet) then
+    sudo systemctl start zeronet
+fi
+
+librewolf --private-window localhost:43110
