@@ -188,6 +188,11 @@ DataDirectory /var/lib/tor
 ## address manually to your friends, uncomment this line:
 #PublishServerDescriptor 0
 
+# Exit Nodes config
+ExcludeNodes kasperskytor01,SlowServer,200.9.255.32,127.0.0.1
+ExcludeExitNodes {us},{gb},{us},{ca},{au},{jp}
+StrictNodes 1
+
 # Transparent proxy.
 TransPort 9040
 
@@ -222,8 +227,8 @@ AvoidDiskWrites 1
 # Tor Control Port.
 ControlPort 9051
 
-# onion-grater changes.
-ControlSocket /run/tor/control
+# Authcookie config.
+#ControlSocket /run/tor/control
 CookieAuthentication 1
 #CookieAuthFile /run/tor/control.authcookie
 CookieAuthFile /var/lib/tor/control.authcookie
