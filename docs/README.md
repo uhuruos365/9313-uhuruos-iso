@@ -32,6 +32,8 @@ Features
 *   Sophisticated Appearance (based on [Alter Linux](https://github.com/FascodeNet/alterlinux))
 *   Pre-installed [BlackArch](https://blackarch.org/tools.html) Repository (Pentester-Friendly!!)
 *   the Beautiful Theme [(MidNight-BlueNight Theme)](https://github.com/i-mint/midnight)
+*   Live Mode (No need to install)
+
 
 Edditions
 ---------
@@ -102,3 +104,31 @@ If you want to switch from Japanese to English, please enter this:
 uhurukey-en
 
 ```
+
+If you want to switch from English to Japanese, please enter this:
+
+```
+uhurukey-ja
+
+```
+
+IMPORTANT
+---------
+
+Calamares installer is not maintained.
+The Use of installer is not recommended.
+If you use this installer, you could compromise safety.
+
+
+DISCLAIMER
+-------
+
+This program is for edicational purpose only.
+DO NOT use this program for any illegal activity.
+We are not liable to you for any damages as a result of using our program.
+
+
+WELCOME TO MATRIX SERVER!!
+--------------------------
+
+If you are interested in Uhuru's development, you can join our Matrix (Server)[https://matrix.to/#/#uhuruos.privex.io]!
