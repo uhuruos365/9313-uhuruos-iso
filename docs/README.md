@@ -131,4 +131,4 @@ We are not liable to you for any damages as a result of using our program.
 WELCOME TO MATRIX SERVER!!
 --------------------------
 
-If you are interested in Uhuru's development, you can join our Matrix (Server)[https://matrix.to/#/#uhuruos.privex.io]!
+If you are interested in Uhuru's development, you can join our Matrix [Server](https://matrix.to/#/#uhuruos.privex.io)!
