@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=OnionLauncher Startup
+Comment=OnionLauncher Startup
+Icon=onionlauncher
+Exec=sudo /usr/bin/python /usr/lib/OnionLauncher-uhuru/main.py
+OnlyShowIn=XFCE;
+StartupNotify=false
+Terminal=false
+Hidden=false
+Categories=System;
