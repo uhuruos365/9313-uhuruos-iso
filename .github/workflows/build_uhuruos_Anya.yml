@@ -80,6 +80,6 @@ jobs:
           draft: false
           prerelease: false
           files: |
-           UhuruOS-*-x86_64.iso
+           UhuruOS-*x86_64.iso_splitted_*
 
 
