@@ -14,7 +14,7 @@
 #fi
 #[[ -f /usr/share/backgrounds/arch-logo-dark/ALDark1.png ]] && chmod 644 /usr/share/backgrounds/arch-logo-dark/ALDark1.png
 
-VERSION='16.0.5.3'
+VERSION_WHO='16.0.5.3'
 
 # Replace right menu
 if [[ "${language}" = "ja" ]]; then
