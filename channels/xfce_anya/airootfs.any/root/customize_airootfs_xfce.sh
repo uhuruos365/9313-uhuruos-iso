@@ -33,8 +33,8 @@ fi
 URL="https://download.whonix.org/ova/$VERSION_WHO/Whonix-XFCE-$VERSION_WHO.ova" 
 filename="./Whonix-XFCE-$VERSION_WHO.ova"
 
-wget URL
-vboxmanage import filename
+wget $URL
+vboxmanage import $filename
 
 
 # Change Theme
