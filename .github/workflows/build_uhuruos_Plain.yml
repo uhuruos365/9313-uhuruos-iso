@@ -1,7 +1,7 @@
 # I used https://github.com/soracqt/myarch as a reference.
 # Thanks to soracqt(https://github.com/soracqt).
 
-name: Build Uhuru Image Plain And Anya
+name: Build Uhuru Image Plain
 
 on:
   pull_request:
@@ -44,10 +44,6 @@ jobs:
       - name: Build UhuruOS minimal xfce edition
         run: ./build.sh -c zstd --noloopmod --noconfirm xfce
 
-      - name: Build UhuruOS Anya Edition
-        run: ./build.sh -c zstd --noloopmod --noconfirm xfce_anya
-
-
       - name: Upload artifact
         uses: actions/upload-artifact@v1
         with:
@@ -63,7 +59,7 @@ jobs:
 
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%Y.%m.%d')_PlainAndAnya"
+        run: echo "::set-output name=date::$(date +'%Y.%m.%d')_Plain"
 
       - name: Download artifact
         uses: actions/download-artifact@v2

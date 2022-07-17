@@ -14,6 +14,7 @@
 #fi
 #[[ -f /usr/share/backgrounds/arch-logo-dark/ALDark1.png ]] && chmod 644 /usr/share/backgrounds/arch-logo-dark/ALDark1.png
 
+VERSION='16.0.5.3'
 
 # Replace right menu
 if [[ "${language}" = "ja" ]]; then
@@ -26,6 +27,15 @@ else
     remove "/etc/skel/.config/Thunar/uca.xml.jp"
     remove "/home/${username}/.config/Thunar/uca.xml.jp"
 fi
+
+# Whonix gateway download & install
+
+URL="https://download.whonix.org/ova/$VERSION_WHO/Whonix-XFCE-$VERSION_WHO.ova" 
+filename="./Whonix-XFCE-$VERSION_WHO.ova"
+
+wget URL
+vboxmanage import filename
+
 
 # Change Theme
 
