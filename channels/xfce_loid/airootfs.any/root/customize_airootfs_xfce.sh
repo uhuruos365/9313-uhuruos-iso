@@ -40,3 +40,4 @@ usermod -a -G tor zeronet
 # Enable zeronet
 _safe_systemctl enable zeronet.service
 chmod +x /usr/lib/start-zeronet
+usermod -aG tor zeronet
