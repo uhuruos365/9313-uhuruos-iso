@@ -74,6 +74,10 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: uhuru_x86_64
+          
+      - name: Upload to Linx-Server
+        id: uploadiso
+        run: echo "::set-output name=url::Please Download ISO from releases or $(curl -s -T UhuruOS-*-x86_64.iso https://up.nixnet.services/upload)"
 
       - name: Split ISO Images
         run: |
@@ -86,6 +90,7 @@ jobs:
         with:
           tag_name: ${{ steps.date.outputs.date }}
           name: ${{ steps.date.outputs.date }}
+          body: ${{steps.uploadiso.outputs.url}}
           draft: false
           prerelease: false
           files: |
