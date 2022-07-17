@@ -48,7 +48,7 @@ jobs:
           echo 'Server = ftp://ftp.kddilabs.jp/Linux/packages/blackarch/$repo/os/$arch' >> /etc/pacman.conf
           echo 'Server = http://www.mirrorservice.org/sites/blackarch.org/blackarch/$repo/os/$arch' >> /etc/pacman.conf
           pacman -Syy --noconfirm 
-          pacman -S --noconfirm blackarch-menus
+          pacman -S --noconfirm blackarch-menus blackarch-mirrorlist
         
       - name: Build UhuruOS Loid edition
         run: ./build.sh -c zstd --noloopmod --noconfirm xfce_loid
