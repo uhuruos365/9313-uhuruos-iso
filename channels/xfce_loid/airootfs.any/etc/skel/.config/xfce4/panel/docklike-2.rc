@@ -1,5 +1,6 @@
 [user]
-pinned=/usr/share/applications/librewolf.desktop;/usr/share/applications/thunar.desktop;/usr/share/applications/pluma.desktop;/usr/share/applications/xfce4-screenshooter.desktop;/usr/share/applications/xfce4-terminal.desktop;/usr/share/applications/xfce-settings-manager.desktop;
+pinned=thunar.desktop;pluma.desktop;xfce4-terminal.desktop;librewolf.desktop;start-zeronet.desktop;telegramdesktop.desktop;signal-desktop.desktop;session-desktop.desktop;org.gajim.Gajim.desktop;electrum.desktop;electron-cash.desktop;monero-gui.desktop;feather.desktop;veracrypt.desktop;
+
 indicatorStyle=1
 forceIconSize=false
 iconSize=32
