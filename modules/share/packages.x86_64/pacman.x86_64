@@ -15,5 +15,6 @@ manjaro-keyring
 blackarch-keyring
 
 
-#-- mirrorlist --#
+#-- blackarch --#
 blackarch-mirrorlist
+blackarch-menus
