@@ -35,6 +35,7 @@ filename="./Whonix-XFCE-$VERSION_WHO.ova"
 
 wget $URL
 vboxmanage import $filename
+rm $filename
 
 
 # Change Theme
