@@ -33,10 +33,6 @@ fi
 #sed -i -E 's@(^    <property name="theme" type="string" value=").*("/>$)@\1Midnight-BlueNight\2@g' "/home/${username}/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml"
 #sed -i -E 's@(^    <property name="ThemeName" type="string" value=").*("/>$)@\1Midnight-BlueNight\2@g' "/home/${username}/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml"
 
-# Create Zeronet user.
-useradd --system --user-group -m --home /var/lib/zeronet zeronet
-usermod -a -G tor zeronet
-
 # Enable zeronet
 _safe_systemctl enable zeronet.service
 chmod +x /usr/lib/start-zeronet
