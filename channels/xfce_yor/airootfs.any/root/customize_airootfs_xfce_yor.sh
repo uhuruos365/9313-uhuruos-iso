@@ -30,6 +30,10 @@ fi
 # WPScan Update
 wpscan --update
 
+# Application categorize
+bash -c 'sudo pacman -Sl blackarch | grep installed | cut -d " " -f 2' | /etc/pacman.d/scripts/ba-gen-desktop.sh gen
+
+
 # Change Theme
 
 #sed -i -E 's@(^    <property name="theme" type="string" value=").*("/>$)@\1Midnight-BlueNight\2@g' "/home/${username}/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml"
