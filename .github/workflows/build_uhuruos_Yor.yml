@@ -36,14 +36,15 @@ jobs:
           wget https://www.ftp.ne.jp/Linux/packages/blackarch/blackarch/os/x86_64/blackarch-keyring-20180925-5-any.pkg.tar.zst && \
           pacman --noconfirm -U blackarch-keyring-20180925-5-any.pkg.tar.zst
 
-      - name: Install BlackArch Packages
-        run: |
-          pacman -Syyu --noconfirm blackarch-mirrorlist blackarch-menus
-
       - name: Populate keyrings
         run: |
           pacman-key --init
           pacman-key --populate manjaro blackarch
+
+      - name: Install BlackArch Packages
+        run: |
+          pacman -Syy --noconfirm 
+          pacman -S --noconfirm blackarch-menus
 
       - name: Build UhuruOS Yor edition
         run: ./build.sh -c zstd --noloopmod --noconfirm xfce_yor
