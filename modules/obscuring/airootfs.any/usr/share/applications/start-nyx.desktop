@@ -8,6 +8,6 @@ Icon=utilities-terminal
 Exec=sudo /usr/bin/nyx
 OnlyShowIn=XFCE;
 StartupNotify=false
-Terminal=false
+Terminal=true
 Hidden=false
 Categories=System;
