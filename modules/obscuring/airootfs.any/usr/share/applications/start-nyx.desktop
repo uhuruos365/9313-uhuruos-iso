@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Nyx
+Comment=Command-line status monitor for tor
+Icon=utilities-terminal
+Exec=sudo /usr/bin/nyx
+OnlyShowIn=XFCE;
+StartupNotify=false
+Terminal=false
+Hidden=false
+Categories=System;
