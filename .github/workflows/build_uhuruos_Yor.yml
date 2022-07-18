@@ -75,9 +75,12 @@ jobs:
         with:
           name: uhuru_x86_64
           
+      - name: Install jq
+        run: apt install jq
+
       - name: Upload to Linx-Server
         id: uploadiso
-        run: echo "::set-output name=url::Please Download ISO from releases or $(curl -s  --retry 3 -T UhuruOS-*-x86_64.iso https://up.nixnet.services/upload)"
+        run: echo "::set-output name=url::Please Download ISO from releases or $(curl -s --retry 3 -F file=@`echo UhuruOS-*-x86_64.iso` https://api.anonfiles.com/upload | jq .data.file.url.short )"
 
       - name: Split ISO Images
         run: |
