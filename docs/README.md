@@ -83,7 +83,8 @@ This is the edition aimed at Pentesting and Offensive Security.
 
 ### Anya Edition
 
-This edition purpose is launching VM & container easily.  
+This edition purpose is launching VM & container easily.
+It includes [Whonix-Gateway and Whonix-Workstation](https://www.whonix.org/wiki/VirtualBox) by defaults.
 ![](../images/wallpapers/uhuru_anya.png)  
 
 #### Pre-Installed packages
