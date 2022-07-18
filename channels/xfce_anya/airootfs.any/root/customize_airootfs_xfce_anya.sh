@@ -31,11 +31,10 @@ fi
 # Whonix gateway download & install
 
 URL="https://download.whonix.org/ova/$VERSION_WHO/Whonix-XFCE-$VERSION_WHO.ova" 
-filename="./Whonix-XFCE-$VERSION_WHO.ova"
 
-su $username -c "wget /home/$username/$URL"
-su $username -c "vboxmanage import /home/$username/$filename --vsys 0 --eula accept --vsys 1 --eula accept"
-su $username -c "rm /home/$username/$filename"
+su $username -c "wget -O /home/$username/tmp.ova $URL"
+su $username -c "vboxmanage import /home/$username/tmp.ova --vsys 0 --eula accept --vsys 1 --eula accept"
+su $username -c "rm /home/$username/tmp.ova"
 
 
 # Change Theme
