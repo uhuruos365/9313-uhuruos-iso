@@ -12,8 +12,6 @@
   <img src="https://img.shields.io/github/repo-size/infoengine1337/uhuruos?color=red&style=popout">
   <img src="https://img.shields.io/tokei/lines/github/infoengine1337/uhuruos?color=orange&style=popout">
 
-
-
 </p>
 
 Overview
@@ -22,8 +20,9 @@ Overview
 UhuruOS is a Hackers' Linux Distribution derived from Arch Linux and etc.  
   
 ![](../images/screenshot/UhuruOS_screenshot.png)  
-We owe this wonderful design to Alter Linux, developed by Fascode Network Project. Please visit [this page](https://github.com/FascodeNet/alterlinux).  
-Thanks to Fascode Network and other developers of Alter Linux.
+We owe this wonderful design to Alter Linux, developed by Fascode Network Project.  
+Please visit [this page](https://github.com/FascodeNet/alterlinux).  
+Thanks to Fascode Network and other developers of Alter Linux.  
 
 Features
 --------
@@ -35,12 +34,19 @@ Features
 *   Live Mode (No need to install)
 
 
+Download
+--------
+
+We build Uhuru OS every day and provide them as releases.   
+We also make downloading easy by auto-upload them to anonfiles.  
+
 Edditions
 ---------
 
 ### Loid Edition
 
 This is the edition aimed at preserving Privacy and Anonymity.  
+  
 ![](../images/wallpapers/uhuru_loid.png)  
 Some utilities of Loid Edition are based on [Obscurix Linux](https://github.com/Obscurix/Obscurix).  
 
@@ -61,6 +67,7 @@ Some utilities of Loid Edition are based on [Obscurix Linux](https://github.com/
 ### Yor Edition
 
 This is the edition aimed at Pentesting and Offensive Security.  
+  
 ![](../images/wallpapers/uhuru_yor.png)  
 
 #### Pre-Installed packages
@@ -83,8 +90,9 @@ This is the edition aimed at Pentesting and Offensive Security.
 
 ### Anya Edition
 
-This edition purpose is launching VM & container easily.
-It includes [Whonix-Gateway and Whonix-Workstation](https://www.whonix.org/wiki/VirtualBox) by defaults.
+This edition purpose is launching VM & container easily.  
+It includes [Whonix-Gateway and Whonix-Workstation](https://www.whonix.org/wiki/VirtualBox) by defaults.  
+  
 ![](../images/wallpapers/uhuru_anya.png)  
 
 #### Pre-Installed packages
@@ -99,37 +107,34 @@ Added Utilities
 ### "uhurukey-ja" and "uhurukey-en" commands
 
 This commands enable us to switch the keyboard layout and input methods.  
-If you want to switch from Japanese to English, please enter this: 
+If you want to switch from Japanese to English, please enter this:  
 ```
-
 uhurukey-en
-
 ```
 
-If you want to switch from English to Japanese, please enter this:
+If you want to switch from English to Japanese, please enter this:  
 
 ```
 uhurukey-ja
-
 ```
 
 IMPORTANT
 ---------
 
 Calamares installer is not maintained.
-The Use of installer is not recommended.
-If you use this installer, you could compromise safety.
+The Use of installer is not recommended.  
+If you use this installer, you could compromise safety.  
 
 
 DISCLAIMER
 -------
 
-This program is for edicational purpose only.
-DO NOT use this program for any illegal activity.
-We are not liable to you for any damages as a result of using our program.
+This program is for edicational purpose only.  
+DO NOT use this program for any illegal activity.  
+We are not liable to you for any damages as a result of using our program.  
 
 
 WELCOME TO MATRIX SERVER!!
 --------------------------
 
-If you are interested in Uhuru's development, you can join our Matrix [Server](https://matrix.to/#/#uhuruos.privex.io)!
+If you are interested in Uhuru's development, you can join our Matrix [Server](https://matrix.to/#/#uhuruos:privex.io)!
