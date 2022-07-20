@@ -44,6 +44,10 @@ jobs:
 
       - name: Build UhuruOS Anya Edition
         run: ./build.sh -c zstd --noloopmod --noconfirm xfce_anya
+        
+      - name: rm work
+        run: |
+          rm -R work
 
       - name: Upload artifact
         uses: actions/upload-artifact@v1
