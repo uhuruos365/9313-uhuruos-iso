@@ -45,7 +45,7 @@ jobs:
       - name: Build UhuruOS Anya Edition
         run: ./build.sh -c zstd --noloopmod --noconfirm xfce_anya
         
-      - name: Populate keyrings
+      - name: rm work
         run: |
           rm -R work
 
