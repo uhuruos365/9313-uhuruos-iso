@@ -38,7 +38,7 @@ jobs:
           pacman-key --populate manjaro blackarch
         
       - name: Build UhuruOS Forger edition
-        run: ./build.sh -c zstd --noloopmod --noconfirm xfce_forger
+        run: ./build.sh -c zstd --noloopmod --noconfirm --cleanup xfce_forger
         
       - name: Upload artifact
         uses: actions/upload-artifact@v1
