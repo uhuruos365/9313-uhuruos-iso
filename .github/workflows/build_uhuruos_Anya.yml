@@ -43,11 +43,7 @@ jobs:
           pacman-key --populate manjaro blackarch
 
       - name: Build UhuruOS Anya Edition
-        run: ./build.sh -c zstd --noloopmod --noconfirm xfce_anya
-        
-      - name: rm work
-        run: |
-          rm -R work
+        run: ./build.sh -c zstd --noloopmod --noconfirm --cleanup xfce_anya
 
       - name: Upload artifact
         uses: actions/upload-artifact@v1
