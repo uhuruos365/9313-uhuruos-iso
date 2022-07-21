@@ -48,6 +48,7 @@ Edditions
 This is the edition aimed at preserving Privacy and Anonymity.  
   
 ![](../images/wallpapers/uhuru_loid.png)  
+![](../images/screenshot/screenshot_loid.png)  
 Some utilities of Loid Edition are based on [Obscurix Linux](https://github.com/Obscurix/Obscurix).  
 
 #### Pre-Installed packages
@@ -69,6 +70,7 @@ Some utilities of Loid Edition are based on [Obscurix Linux](https://github.com/
 This is the edition aimed at Pentesting and Offensive Security.  
   
 ![](../images/wallpapers/uhuru_yor.png)  
+![](../images/screenshot/screenshot_yor.png)  
 
 #### Pre-Installed packages
 
@@ -94,6 +96,7 @@ This edition purpose is launching VM & container easily.
 It includes [Whonix-Gateway and Whonix-Workstation](https://www.whonix.org/wiki/VirtualBox) by defaults.  
   
 ![](../images/wallpapers/uhuru_anya.png)  
+![](../images/screenshot/screenshot_anya.png)  
 
 #### Pre-Installed packages
 
