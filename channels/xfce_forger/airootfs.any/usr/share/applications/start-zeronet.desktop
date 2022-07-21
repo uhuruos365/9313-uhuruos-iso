@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Zeronet Startup
+Comment=Zeronet Startup
+Icon=timevault
+Exec=/usr/lib/start-zeronet
+OnlyShowIn=XFCE;
+StartupNotify=false
+Terminal=false
+Hidden=false
+Categories=Network;P2P;
