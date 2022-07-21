@@ -70,7 +70,7 @@ jobs:
       - name: Install jq
         run: sudo apt install jq
 
-      - name: Upload to Linx-Server
+      - name: Upload to anonfiles
         id: uploadiso
         run: echo "::set-output name=url::Please Download ISO from releases or $(curl -s --retry 3 -F file=@`echo UhuruOS-*-x86_64.iso` https://api.anonfiles.com/upload | jq .data.file.url.short )"
 
