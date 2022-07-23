@@ -8,11 +8,11 @@
 #
 
 # Replace wallpaper.
-#if [[ -f /usr/share/backgrounds/xfce/xfce-verticals.png ]]; then
-#    remove /usr/share/backgrounds/xfce/xfce-verticals.png
-#    ln -s /usr/share/backgrounds/arch-logo-dark/ALDark1.png /usr/share/backgrounds/xfce/xfce-verticals.png
-#fi
-#[[ -f /usr/share/backgrounds/arch-logo-dark/ALDark1.png ]] && chmod 644 /usr/share/backgrounds/arch-logo-dark/ALDark1.png
+if [[ -f /usr/share/backgrounds/xfce/xfce-verticals.png ]]; then
+    remove /usr/share/backgrounds/xfce/xfce-verticals.png
+    ln -s /usr/share/backgrounds/arch-logo-dark/ALDark1.png /usr/share/backgrounds/xfce/xfce-verticals.png
+fi
+[[ -f /usr/share/backgrounds/arch-logo-dark/ALDark1.png ]] && chmod 644 /usr/share/backgrounds/arch-logo-dark/ALDark1.png
 
 
 # Replace right menu
@@ -37,3 +37,10 @@ fi
 _safe_systemctl enable zeronet.service
 chmod +x /usr/lib/start-zeronet
 usermod -aG tor zeronet
+
+# WPScan Update
+wpscan --update
+
+# Application categorize
+bash -c 'sudo pacman -Sl blackarch | grep installed | cut -d " " -f 2' | /etc/pacman.d/scripts/ba-gen-desktop.sh gen
+
