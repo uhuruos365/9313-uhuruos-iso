@@ -6,7 +6,7 @@
 -A INPUT -m state --state ESTABLISHED -j ACCEPT
 -A OUTPUT -o lo -j ACCEPT
 -A OUTPUT -m state --state ESTABLISHED -j ACCEPT
--A OUTPUT -p tcp -m owner --uid-owner 43 -m tcp --tcp-flags FIN,SYN,RST,ACK SYN -j ACCEPT
+-A OUTPUT -p tcp -m owner --uid-owner "tor" -m tcp --tcp-flags FIN,SYN,RST,ACK SYN -j ACCEPT
 -A OUTPUT -d 127.0.0.1/32 -p tcp -m tcp --dport 9040 --tcp-flags FIN,SYN,RST,ACK SYN -j ACCEPT
 COMMIT
 
