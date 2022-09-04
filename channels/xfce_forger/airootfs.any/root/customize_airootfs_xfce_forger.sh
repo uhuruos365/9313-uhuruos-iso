@@ -8,11 +8,11 @@
 #
 
 # Replace wallpaper.
-if [[ -f /usr/share/backgrounds/xfce/xfce-verticals.png ]]; then
-    remove /usr/share/backgrounds/xfce/xfce-verticals.png
-    ln -s /usr/share/backgrounds/arch-logo-dark/ALDark1.png /usr/share/backgrounds/xfce/xfce-verticals.png
-fi
-[[ -f /usr/share/backgrounds/arch-logo-dark/ALDark1.png ]] && chmod 644 /usr/share/backgrounds/arch-logo-dark/ALDark1.png
+#if [[ -f /usr/share/backgrounds/xfce/xfce-verticals.png ]]; then
+#    remove /usr/share/backgrounds/xfce/xfce-verticals.png
+#    ln -s /usr/share/backgrounds/arch-logo-dark/ALDark1.png /usr/share/backgrounds/xfce/xfce-verticals.png
+#fi
+#[[ -f /usr/share/backgrounds/arch-logo-dark/ALDark1.png ]] && chmod 644 /usr/share/backgrounds/arch-logo-dark/ALDark1.png
 
 
 # Replace right menu
@@ -44,3 +44,7 @@ wpscan --update
 # Application categorize
 bash -c 'sudo pacman -Sl blackarch | grep installed | cut -d " " -f 2' | /etc/pacman.d/scripts/ba-gen-desktop.sh gen
 
+# download seclists wordlists
+su $username -c "mkdir seclists-wordlist"
+su $username -c \
+    "wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/big.txt https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common.txt https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/raft-large-directories.txt https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/raft-large-files.txt -P seclists-wordlist"
