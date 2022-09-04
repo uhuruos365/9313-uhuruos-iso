@@ -8,8 +8,8 @@
 #
 
 # Bluetooth
-rfkill unblock all
-_safe_systemctl enable bluetooth
+#rfkill unblock all
+#_safe_systemctl enable bluetooth
 
 # Snap
 #_safe_systemctl enable snapd.apparmor.service

@@ -11,7 +11,7 @@ for _service in "pipewire.service" "pipewire-pulse.service"; do
 done
 
 # Enable bluetooth support for pipewire
-if [[ -f "/etc/pipewire/media-session.d/media-session.conf" ]]; then
-    sed -i "s|#bluez5|bluez5 |g" "/etc/pipewire/media-session.d/media-session.conf"
-fi
+#if [[ -f "/etc/pipewire/media-session.d/media-session.conf" ]]; then
+#    sed -i "s|#bluez5|bluez5 |g" "/etc/pipewire/media-session.d/media-session.conf"
+#fi
 
