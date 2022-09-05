@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-# Replace logo.
-rm -rf  "/usr/share/lxde/images/logout-banner.png"
-ln -s "/usr/share/lxde/images/alterlinux.png" "/usr/share/lxde/images/logout-banner.png"
-chmod 644 "/usr/share/lxde/images/logout-banner.png"

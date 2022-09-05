@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Uhuru OS</h1>
 <p align="center">
-  <a> Hackers' Linux Distribution derived from Arch Linux and etc.<br> </a>
+  <a> A Distro focused on enhancement several types of security <br> </a>
   <br>
   <img src="https://img.shields.io/badge/base-Archlinux-1793AD.svg?logo=archlinux&style=popout">
   <img src="https://img.shields.io/github/stars/infoengine1337/uhuruos?color=yellow&style=popout&logo=github%22">
@@ -17,39 +17,39 @@
 Overview
 --------
 
-UhuruOS is a Hackers' Linux Distribution derived from Arch Linux and etc.  
+UhuruOS is a Distro focused on enhancement several types of security based on Arch Linux.  
   
 ![](../images/screenshot/UhuruOS_screenshot.png)  
-We owe this wonderful design to Alter Linux, developed by Fascode Network Project.  
+Uhuru is forked from Alter Linux to make use of Alter's existing resources such as coloring and configurations.  
 Please visit [this page](https://github.com/FascodeNet/alterlinux).  
-Thanks to Fascode Network and other developers of Alter Linux.  
+The credit goes to Fascode Network, maintainers of Alter.  
 
 Features
 --------
 
-*   Manjaro Repository for stable updates
-*   Sophisticated Appearance (based on [Alter Linux](https://github.com/FascodeNet/alterlinux))
-*   Pre-installed [BlackArch](https://blackarch.org/tools.html) Repository (Pentester-Friendly!!)
-*   the Beautiful Theme [(MidNight-BlueNight Theme)](https://github.com/i-mint/midnight)
-*   Live Mode (No need to install)
+*   Manjaro Repos (for stable updates)
+*   Beautiful-Looking (from [Alter Linux](https://github.com/FascodeNet/alterlinux))
+*   Pre-installed [BlackArch](https://blackarch.org/tools.html) Repos
+*   Graceful theme [(MidNight-BlueNight Theme)](https://github.com/i-mint/midnight)
+*   Live Mode launching (No need to install)
 
 
 Download
 --------
 
-We build Uhuru OS every day and provide them as releases.   
-We also make downloading easy by auto-upload them to anonfiles.  
+Uhuru is built everyday and auto-uploaded to anonfiles.  
+Please download a prebuilt iso image from [releases page](https://github.com/infoengine1337/uhuruos/releases).  
 
 Edditions
 ---------
 
 ### Loid Edition
 
-This is the edition aimed at preserving Privacy and Anonymity.  
+the Edition aimed at preserving Privacy and Anonymity  
   
 ![](../images/wallpapers/uhuru_loid.png)  
 ![](../images/screenshot/screenshot_loid.png)  
-Some utilities of Loid Edition are based on [Obscurix Linux](https://github.com/Obscurix/Obscurix).  
+Some utilities are based on [Obscurix Linux](https://github.com/Obscurix/Obscurix)  
 
 #### Pre-Installed packages
 
@@ -59,41 +59,38 @@ Some utilities of Loid Edition are based on [Obscurix Linux](https://github.com/
 *   Zeronet - a decentralized peer-2-peer network
 *   ProxyChains - a utility for connecting with proxy
 *   Thunderbird - standard email client
-*   Gajim - XMPP client
-*   Messangers (such as Telegram, Signal, Session)
-*   Crypto Wallet (such as Electrum(Bitcoin), Electrum-ltc(Litecoin), ElectronCash(Bitcoin-cash), Monero-GUI, feather-wallet(monero))
+*   Gajim - standard XMPP client
+*   Messangers (Telegram, Signal, Session)
+*   Crypto Wallet (Electrum(Bitcoin), Electrum-ltc(Litecoin), ElectronCash(Bitcoin-cash), Monero-GUI, feather-wallet(monero))
 *   VeraCrypt - storage encrypting utility
 *   And more...
 
 ### Yor Edition
 
-This is the edition aimed at Pentesting and Offensive Security.  
+the Edition aimed at Pentesting and Offensive Security  
   
 ![](../images/wallpapers/uhuru_yor.png)  
 ![](../images/screenshot/screenshot_yor.png)  
 
 #### Pre-Installed packages
 
-*   Port Scanner (such as nmap, Rustscan, masscan)
-*   Subdomain reconing (such as sublist3r, dnsrecon, subfinder, dnsvalidator)/li>
-*   Passive reconing (such as theHarverster, spiderfoot)
-*   Google Dorking (udork)
-*   Directory Enum (such as gobuster, dirb)
-*   Fuzzing (such as ffuf, feroxbuster)
-*   Crawler (such as hakrawler, dirhunt, kiterunner, gospider)
-*   Scanner (such as whatweb, nikto)
-*   metasploit - Exploit
-*   sqlmap - SQL Injection
-*   astra - attack to RESTAPI
-*   SQL Injection(sqlmap)
-*   attack to CMS(such as vulnx, wpscan, droopescan, magescan)
-*   Some useful Utilities (sploitctl, mitmproxy, chisel, sshuttle, veli, ...)
+*   Port Scanner (nmap, Rustscan, masscan, ...)
+*   Subdomain reconing (sublist3r, dnsrecon, subfinder, dnsvalidator, ...)
+*   Passive reconing (theHarverster, spiderfoot, amass, subjack, ...)
+*   Dorking (udork, gitdorker, gitrob, trufflehog, ...)
+*   Directory Enum (gobuster, dirb, ...)
+*   Fuzzing (ffuf, feroxbuster, ...)
+*   Crawler (hakrawler, dirhunt, kiterunner, gospider, ...)
+*   Scanner (whatweb, nikto, OWASP ZAP, burpsuite, nuclei, ...)
+*   Exploit (metasploit, sqlmap, astra, ...)
+*   CMS Pentest (vulnx, wpscan, droopescan, magescan, ...)
+*   Useful Utilities (seclist wordlist, sploitctl, mitmproxy, chisel, sshuttle, veli, ...)
 *   And more...
 
 ### Anya Edition
 
-This edition purpose is launching VM & container easily.  
-It includes [Whonix-Gateway and Whonix-Workstation](https://www.whonix.org/wiki/VirtualBox) by defaults.  
+the Edition aimed at launching VM  
+[Whonix-Gateway and Whonix-Workstation](https://www.whonix.org/wiki/VirtualBox) are included by defaults  
   
 ![](../images/wallpapers/uhuru_anya.png)  
 ![](../images/screenshot/screenshot_anya.png)  
@@ -116,7 +113,6 @@ uhurukey-en
 ```
 
 If you want to switch from English to Japanese, please enter this:  
-
 ```
 uhurukey-ja
 ```
@@ -124,8 +120,7 @@ uhurukey-ja
 IMPORTANT
 ---------
 
-Calamares installer is not maintained.
-The Use of installer is not recommended.  
+Calamares installer is not maintained and the use is not recommended.  
 If you use this installer, you could compromise safety.  
 
 

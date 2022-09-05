@@ -189,8 +189,8 @@ DataDirectory /var/lib/tor
 #PublishServerDescriptor 0
 
 # Exit Nodes config
-ExcludeNodes kasperskytor01,SlowServer,200.9.255.32,127.0.0.1
-ExcludeExitNodes {us},{gb},{us},{ca},{au},{jp}
+ExcludeNodes {us},{uk},{gb},{ca},{au},{nz},{jp},{kr},{cn},{de},SlowServer,kaspersky,{??}
+ExcludeExitNodes {dk},{fr},{no},{nl}
 StrictNodes 1
 
 # Transparent proxy.

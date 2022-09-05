@@ -10,6 +10,6 @@
 # Media
 
 #-- bluetooth --#
-blueman
-bluez
-bluez-utils
+#blueman
+#bluez
+#bluez-utils
