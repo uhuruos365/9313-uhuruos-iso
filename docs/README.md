@@ -59,9 +59,9 @@ Some utilities are based on [Obscurix Linux](https://github.com/Obscurix/Obscuri
 *   Zeronet - a decentralized peer-2-peer network
 *   ProxyChains - a utility for connecting with proxy
 *   Thunderbird - standard email client
-*   Gajim - XMPP client
-*   Messangers (such as Telegram, Signal, Session)
-*   Crypto Wallet (such as Electrum(Bitcoin), Electrum-ltc(Litecoin), ElectronCash(Bitcoin-cash), Monero-GUI, feather-wallet(monero))
+*   Gajim - standard XMPP client
+*   Messangers (Telegram, Signal, Session)
+*   Crypto Wallet (Electrum(Bitcoin), Electrum-ltc(Litecoin), ElectronCash(Bitcoin-cash), Monero-GUI, feather-wallet(monero))
 *   VeraCrypt - storage encrypting utility
 *   And more...
 
@@ -74,20 +74,17 @@ the Edition aimed at Pentesting and Offensive Security
 
 #### Pre-Installed packages
 
-*   Port Scanner (such as nmap, Rustscan, masscan)
-*   Subdomain reconing (such as sublist3r, dnsrecon, subfinder, dnsvalidator)
-*   Passive reconing (such as theHarverster, spiderfoot)
-*   Google Dorking (udork)
-*   Directory Enum (such as gobuster, dirb)
-*   Fuzzing (such as ffuf, feroxbuster)
-*   Crawler (such as hakrawler, dirhunt, kiterunner, gospider)
-*   Scanner (such as whatweb, nikto)
-*   metasploit - Exploit
-*   sqlmap - SQL Injection
-*   astra - attack to RESTAPI
-*   SQL Injection(sqlmap)
-*   attack to CMS(such as vulnx, wpscan, droopescan, magescan)
-*   Some useful Utilities (sploitctl, mitmproxy, chisel, sshuttle, veli, ...)
+*   Port Scanner (nmap, Rustscan, masscan, ...)
+*   Subdomain reconing (sublist3r, dnsrecon, subfinder, dnsvalidator, ...)
+*   Passive reconing (theHarverster, spiderfoot, amass, subjack, ...)
+*   Dorking (udork, gitdorker, gitrob, trufflehog, ...)
+*   Directory Enum (gobuster, dirb, ...)
+*   Fuzzing (ffuf, feroxbuster, ...)
+*   Crawler (hakrawler, dirhunt, kiterunner, gospider, ...)
+*   Scanner (whatweb, nikto, OWASP ZAP, burpsuite, nuclei, ...)
+*   Exploit (metasploit, sqlmap, astra, ...)
+*   CMS Pentest (vulnx, wpscan, droopescan, magescan, ...)
+*   Useful Utilities (seclist wordlist, sploitctl, mitmproxy, chisel, sshuttle, veli, ...)
 *   And more...
 
 ### Anya Edition
