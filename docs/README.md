@@ -31,7 +31,7 @@ Features
 *   Beautiful-Looking (from [Alter Linux](https://github.com/FascodeNet/alterlinux))
 *   Pre-installed [BlackArch](https://blackarch.org/tools.html) Repos
 *   Graceful theme [(MidNight-BlueNight Theme)](https://github.com/i-mint/midnight)
-*   Live Mode launching (No need to install)
+*   Live boot (No need to install, leaves no digital footprint)
 
 
 Download
@@ -43,9 +43,7 @@ Please download a prebuilt iso image from [releases page](https://github.com/inf
 Edditions
 ---------
 
-### Loid Edition
-
-the Edition aimed at preserving Privacy and Anonymity  
+### Loid Edition - the Edition aimed at preserving Privacy and Anonymity
   
 ![](../images/wallpapers/uhuru_loid.png)  
 ![](../images/screenshot/screenshot_loid.png)  
@@ -65,9 +63,7 @@ Some utilities are based on [Obscurix Linux](https://github.com/Obscurix/Obscuri
 *   VeraCrypt - storage encrypting utility
 *   And more...
 
-### Yor Edition
-
-the Edition aimed at Pentesting and Offensive Security  
+### Yor Edition - the Edition aimed at Pentesting and Offensive Security
   
 ![](../images/wallpapers/uhuru_yor.png)  
 ![](../images/screenshot/screenshot_yor.png)  
@@ -87,9 +83,8 @@ the Edition aimed at Pentesting and Offensive Security
 *   Useful Utilities (seclist wordlist, sploitctl, mitmproxy, chisel, sshuttle, veli, ...)
 *   And more...
 
-### Anya Edition
+### Anya Edition - the Edition aimed at launching VM
 
-the Edition aimed at launching VM  
 [Whonix-Gateway and Whonix-Workstation](https://www.whonix.org/wiki/VirtualBox) are included by defaults  
   
 ![](../images/wallpapers/uhuru_anya.png)  
