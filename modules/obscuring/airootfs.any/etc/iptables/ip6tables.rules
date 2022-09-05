@@ -20,3 +20,4 @@ COMMIT
 -A OUTPUT -p udp -m udp --dport 53 -j REDIRECT --to-ports 5353
 -A OUTPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,ACK SYN -j REDIRECT --to-ports 9040
 COMMIT
+
