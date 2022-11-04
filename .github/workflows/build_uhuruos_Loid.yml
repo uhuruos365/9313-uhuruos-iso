@@ -29,12 +29,6 @@ jobs:
       - name: Modify mirrorlist
         run: |
           echo 'Server = https://mirrors.kernel.org/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
-      - name: Sync reflector
-        run: |
-          pacman -Sy --noconfirm reflector
-      - name: Run Reflecrtor
-        run: |
-          reflector --protocol https -c Japan --sort rate --save /etc/pacman.d/mirrorlist
 
       - name: Install Required Packages
         run: |
