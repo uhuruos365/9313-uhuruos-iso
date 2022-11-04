@@ -45,8 +45,8 @@ jobs:
           pacman-key --init
           pacman-key --populate manjaro blackarch
         
-      - name: Build UhuruOS Loid edition
-        run: ./build.sh -c zstd --noloopmod --noconfirm --cleanup xfce_loid
+      - name: Build UhuruOS
+        run: ./build.sh -c zstd --noloopmod --noconfirm --cleanup $GITHUB_REF_NAME
         
       - name: Upload artifact
         uses: actions/upload-artifact@v1
@@ -63,7 +63,7 @@ jobs:
 
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%Y.%m.%d')_Loid"
+        run: echo "::set-output name=build_no::$GITHUB_REF_NAME-$GITHUB_RUN_NUMBER"
 
       - name: Download artifact
         uses: actions/download-artifact@v2
@@ -77,9 +77,9 @@ jobs:
         id: uploadiso
         run: echo "::set-output name=url::Please Download ISO from releases or $(curl -s --retry 3 -F file=@`echo UhuruOS-*-x86_64.iso` https://api.anonfiles.com/upload | jq .data.file.url.short )"
 
-      - name: Split ISO Images
-        run: |
-          ls UhuruOS-xfce_loid-en-*.iso | xargs -n1 -I{} bash -c "split -b1500m {} {}_splitted_ ; rm {}"
+      # - name: Split ISO Images
+      #   run: |
+      #     ls UhuruOS-xfce_loid-en-*.iso | xargs -n1 -I{} bash -c "split -b1500m {} {}_splitted_ ; rm {}"
 
       - name: Create release
         uses: softprops/action-gh-release@v1
@@ -92,6 +92,6 @@ jobs:
           draft: false
           prerelease: false
           files: |
-           UhuruOS-*x86_64.iso_splitted_*
+           UhuruOS-*x86_64.iso
 
 
