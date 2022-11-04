@@ -46,11 +46,11 @@ jobs:
       - name: upload to sf
         run: ./5.sf.upload.sh
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v1
-        with:
-          name: uhuru_x86_64
-          path: out
+      # - name: Upload artifact
+      #   uses: actions/upload-artifact@v1
+      #   with:
+      #     name: uhuru_x86_64
+      #     path: out
 
   release:
     runs-on: ubuntu-latest
@@ -73,7 +73,7 @@ jobs:
 
       - name: Upload to sf
         id: uploadiso
-        run: echo "::set-output name=url::Please Download ISO From Release Or SourceForge: ${GITHUB_REF_NAME}-${GITHUB_RUN_NUMBER}"
+        run: echo "::set-output name=url::Please Download ISO From Release Or SourceForge: ${{GITHUB_REF_NAME}}-${{GITHUB_RUN_NUMBER}}"
 
       # - name: Split ISO Images
       #   run: |
@@ -84,12 +84,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
         with:
-          tag_name: $GITHUB_REF_NAME-$GITHUB_RUN_NUMBER
-          name: $GITHUB_REF_NAME-$GITHUB_RUN_NUMBER
+          tag_name: ${{GITHUB_REF_NAME}}-${{GITHUB_RUN_NUMBER}}
+          name: ${{GITHUB_REF_NAME-$GITHUB_RUN_NUMBER}}
           body: ${{steps.uploadiso.outputs.url}}
           draft: false
           prerelease: false
-          files: |
-           UhuruOS-*x86_64.iso
+          # files: |
+          #  UhuruOS-*x86_64.iso
 
 
