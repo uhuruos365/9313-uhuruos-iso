@@ -59,9 +59,9 @@ jobs:
 
       - uses: actions/checkout@v2
 
-      # - name: Get current date
-      #   id: date
-      #   run: echo "::set-output name=build_no::$GITHUB_REF_NAME-$GITHUB_RUN_NUMBER"
+      - name: Get current date
+        id: build_no
+        run: echo "::set-output name=build_no::$GITHUB_REF_NAME-$GITHUB_RUN_NUMBER"
 
       # - name: Download artifact
       #   uses: actions/download-artifact@v2
@@ -73,7 +73,7 @@ jobs:
 
       - name: Upload to sf
         id: uploadiso
-        run: echo "::set-output name=url::Please Download ISO From Release Or SourceForge"
+        run: echo "::set-output name=url::Please Download ISO From SourceForge ${GITHUB_REF_NAME}-${GITHUB_RUN_NUMBER}"
       # ${GITHUB_REF_NAME}-${GITHUB_RUN_NUMBER}"
       # - name: Split ISO Images
       #   run: |
@@ -84,8 +84,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
         with:
-          tag_name: ${{GITHUB_REF_NAME}}-${{GITHUB_RUN_NUMBER}}
-          name: ${{GITHUB_REF_NAME-$GITHUB_RUN_NUMBER}}
+          tag_name: ${{ steps.build_no.outputs.build_no }}
+          name: ${{ steps.build_no.outputs.build_no }}
           body: ${{steps.uploadiso.outputs.url}}
           draft: false
           prerelease: false
