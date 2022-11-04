@@ -9,6 +9,7 @@
 #shellcheck disable=SC2001
 
 set -e -u
+set -x
 
 aur_username="aurbuild"
 pacman_debug=false
