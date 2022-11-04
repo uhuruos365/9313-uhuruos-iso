@@ -73,7 +73,7 @@ jobs:
 
       - name: Upload to sf
         id: uploadiso
-        run: echo "::set-output name=url::Please Download ISO From Release Or SourceForge: ${{GITHUB_REF_NAME}}-${{GITHUB_RUN_NUMBER}}"
+        run: echo "::set-output name=url::Please Download ISO From Release Or SourceForge: ${GITHUB_REF_NAME}-${GITHUB_RUN_NUMBER}"
 
       # - name: Split ISO Images
       #   run: |
