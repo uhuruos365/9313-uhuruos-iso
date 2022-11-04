@@ -8,5 +8,5 @@
 session-desktop-bin
 
 #-- Gajim OMEMO Plugin --#
-gajim-plugin-omemo
+# gajim-plugin-omemo
 
