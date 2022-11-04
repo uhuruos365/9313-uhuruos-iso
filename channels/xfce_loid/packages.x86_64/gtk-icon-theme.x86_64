@@ -9,5 +9,8 @@
 #
 # look and feel
 
-# theme
-#arc-gtk-theme
+#-- system monitor --#
+gnome-system-monitor
+
+#-- GUI Text Editor --#
+xed
