@@ -26,9 +26,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: Fasttrack
+      - name: Modify mirrorlist
         run: |
-          pacman-mirrors --fasttrack
+          echo 'Server = https://mirrors.kernel.org/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
+      - name: Sync reflector
+        run: |
+          pacman -Sy --noconfirm reflector
+      - name: Run Reflecrtor
+        run: |
+          reflector --protocol https -c Japan --sort rate --save /etc/pacman.d/mirrorlist
 
       - name: Install Required Packages
         run: |
