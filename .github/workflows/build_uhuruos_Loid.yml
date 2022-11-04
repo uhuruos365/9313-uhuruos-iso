@@ -28,7 +28,7 @@ jobs:
       
       - name: Modify mirrorlist
         run: |
-          echo 'Server = https://mirrors.kernel.org/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
+          echo 'Server = https://mirrors.tuna.tsinghua.edu.cn/manjaro/$repo/os/$arch' > /etc/pacman.d/mirrorlist
 
       - name: Install Required Packages
         run: |
