@@ -71,9 +71,9 @@ jobs:
       - name: Install Tools
         run: sudo apt install -y jq openssh-client
 
-      # - name: Upload to anonfiles
-      #   id: uploadiso
-      #   run: echo "::set-output name=url::Please Download ISO from releases or $(curl -s --retry 3 -F file=@`echo UhuruOS-*-x86_64.iso` https://api.anonfiles.com/upload | jq .data.file.url.short )"
+      - name: Upload to sf
+        id: uploadiso
+        run: echo "::set-output name=url::Please Download ISO From Release Or SourceForge: ${GITHUB_REF_NAME}-${GITHUB_RUN_NUMBER}"
 
       # - name: Split ISO Images
       #   run: |
@@ -86,7 +86,7 @@ jobs:
         with:
           tag_name: $GITHUB_REF_NAME-$GITHUB_RUN_NUMBER
           name: $GITHUB_REF_NAME-$GITHUB_RUN_NUMBER
-          body: $GITHUB_REF_NAME-$GITHUB_RUN_NUMBER: 
+          body: ${{steps.uploadiso.outputs.url}}
           draft: false
           prerelease: false
           files: |
