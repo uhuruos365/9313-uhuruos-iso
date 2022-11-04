@@ -42,7 +42,10 @@ jobs:
         
       - name: Build UhuruOS
         run: ./build.sh -c zstd --noloopmod --noconfirm --cleanup $GITHUB_REF_NAME
-        
+
+      - name: upload to sf
+        run: ./5.sf.upload.sh
+
       - name: Upload artifact
         uses: actions/upload-artifact@v1
         with:
