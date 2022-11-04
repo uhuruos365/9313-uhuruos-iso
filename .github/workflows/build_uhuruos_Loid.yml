@@ -26,9 +26,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: Modify mirrorlist
+      - name: Fasttrack
         run: |
-          echo 'Server = https://mirrors.tuna.tsinghua.edu.cn/manjaro/$repo/os/$arch' > /etc/pacman.d/mirrorlist
+          pacman-mirrors --fasttrack
 
       - name: Install Required Packages
         run: |
