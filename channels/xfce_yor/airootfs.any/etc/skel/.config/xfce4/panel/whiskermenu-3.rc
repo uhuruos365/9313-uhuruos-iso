@@ -1,4 +1,4 @@
-favorites=firefox.desktop,thunar.desktop,pluma.desktop,xfce4-terminal.desktop
+favorites=chromium-browser.desktop,Thunar.desktop,vlc.desktop,xfce4-terminal.desktop,gimp.desktop
 recent=
 button-title=Uhuru
 button-icon=/usr/share/icons/hicolor/96x96/apps/uhuru.png

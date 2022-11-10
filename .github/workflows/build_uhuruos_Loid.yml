@@ -4,6 +4,9 @@
 name: Build Uhuru Image Loid
 
 on:
+  push:
+    branches:
+      - '*'
   pull_request:
     branches: [ dev ]
 
@@ -81,7 +84,7 @@ jobs:
       - name: Create release
         uses: softprops/action-gh-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
         with:
           tag_name: ${{ steps.date.outputs.date }}
           name: ${{ steps.date.outputs.date }}
